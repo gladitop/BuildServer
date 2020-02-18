@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FubarDev.FtpServer;
 
 namespace BuildServer
 {
@@ -23,6 +24,16 @@ namespace BuildServer
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btaddserver_Click(object sender, RoutedEventArgs e)//Add server
+        {
+
+        }
+
+        private void btdeleteserver_Click(object sender, RoutedEventArgs e)//Delete server
+        {
+
         }
     }
 }

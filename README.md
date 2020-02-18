@@ -1,2 +1,2 @@
 # BuildServer
-Это программа для создания своего ftp/tcp сервера для хранения данных
+This is a program for creating your ftp/tcp server for storing data
