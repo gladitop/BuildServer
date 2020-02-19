@@ -57,8 +57,7 @@
 
 | Package name                      | Description				     | Badge |
 |-----------------------------------|--------------------------------|-------|
-| `FubarDev.FtpServer`              | This is a library for ftp server| [![FubarDev.FtpServer](https://img.shields.io/nuget/vpre/FubarDev.FtpServer.svg)](https://www.nuget.org/packages/FubarDev.FtpServer) |         |
-<<<<<<< HEAD
+| `FubarDev.FtpServer`              | This is a library for ftp server| [![FubarDev.FtpServer](https://img.shields.io/nuget/vpre/FubarDev.FtpServer.svg)](https://www.nuget.org/packages/FubarDev.FtpServer) |
 
 ## Folders
 
@@ -68,5 +67,3 @@
 | `GUI`          | Graphical version   |
 | `InstallFile`  | Installation Files  |
 | `Install`      | Installer           |
-=======
->>>>>>> 5e65445b28fab8e06e0d91fb2c2b67dca304ec9c
