@@ -36,6 +36,6 @@
 
 ## NuGet packages
 
-| Package name                      | Description				    | Badge |
-|-----------------------------------|-------------------------------|-------|
-| `FubarDev.FtpServer`              | Core library				    | [![FubarDev.FtpServer](https://img.shields.io/nuget/vpre/FubarDev.FtpServer.svg)](https://www.nuget.org/packages/FubarDev.FtpServer) |         |
+| Package name                      | Description				     | Badge |
+|-----------------------------------|--------------------------------|-------|
+| `FubarDev.FtpServer`              | This is a library for ftp server| [![FubarDev.FtpServer](https://img.shields.io/nuget/vpre/FubarDev.FtpServer.svg)](https://www.nuget.org/packages/FubarDev.FtpServer) |         |
