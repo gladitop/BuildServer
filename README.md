@@ -11,6 +11,24 @@
 
 ```This is a program for creating your ftp/tcp server for storing data```
 
+## GUI
+
+```This type of program runs on Windows OS.```
+```It has a graphical shell.```
+
+## Console
+
+```This type of program is suitable for running Windows, Linux, and Mac OC.```
+```It does not have a graphical shell.```
+```Because this is a console version of programs!```
+
+# Detention
+
+* [Addictions](https://github.com/damiralmaev/BuildServer#addictions)
+* [Prerequisites](https://github.com/damiralmaev/BuildServer#prerequisites)
+* [Using](https://github.com/damiralmaev/BuildServer#using)
+* [NuGet packages][Addictions](https://github.com/damiralmaev/BuildServer#nuget-packages)
+
 # Addictions
 
 **GUI**
@@ -33,6 +51,7 @@
 * Visual Studio 2019
 * .NET Core 3.0
 * C# 8.0
+* .Net Framework 4.7.2
 
 ## NuGet packages
 
