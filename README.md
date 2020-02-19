@@ -27,7 +27,7 @@
 * [Addictions](https://github.com/damiralmaev/BuildServer#addictions)
 * [Prerequisites](https://github.com/damiralmaev/BuildServer#prerequisites)
 * [Using](https://github.com/damiralmaev/BuildServer#using)
-* [NuGet packages][Addictions](https://github.com/damiralmaev/BuildServer#nuget-packages)
+* [NuGet packages](https://github.com/damiralmaev/BuildServer#nuget-packages)
 
 # Addictions
 
@@ -58,6 +58,7 @@
 | Package name                      | Description				     | Badge |
 |-----------------------------------|--------------------------------|-------|
 | `FubarDev.FtpServer`              | This is a library for ftp server| [![FubarDev.FtpServer](https://img.shields.io/nuget/vpre/FubarDev.FtpServer.svg)](https://www.nuget.org/packages/FubarDev.FtpServer) |         |
+<<<<<<< HEAD
 
 ## Folders
 
@@ -67,3 +68,5 @@
 | `GUI`          | Graphical version   |
 | `InstallFile`  | Installation Files  |
 | `Install`      | Installer           |
+=======
+>>>>>>> 5e65445b28fab8e06e0d91fb2c2b67dca304ec9c
