@@ -27,7 +27,7 @@
 * [Addictions](https://github.com/damiralmaev/BuildServer#addictions)
 * [Prerequisites](https://github.com/damiralmaev/BuildServer#prerequisites)
 * [Using](https://github.com/damiralmaev/BuildServer#using)
-* [NuGet packages][Addictions](https://github.com/damiralmaev/BuildServer#nuget-packages)
+* [NuGet packages](https://github.com/damiralmaev/BuildServer#nuget-packages)
 
 # Addictions
 
