@@ -28,8 +28,9 @@ Because this is a console version of programs!
 
 * [Addictions](https://github.com/damiralmaev/BuildServer#addictions)
 * [Prerequisites](https://github.com/damiralmaev/BuildServer#prerequisites)
-* [Using](https://github.com/damiralmaev/BuildServer#using)
-* [NuGet packages](https://github.com/damiralmaev/BuildServer#nuget-packages)
+    * [Using](https://github.com/damiralmaev/BuildServer#using)
+    * [NuGet packages](https://github.com/damiralmaev/BuildServer#nuget-packages)
+    * [Folders](https://github.com/damiralmaev/BuildServer#folders)
 * [Credits](https://github.com/damiralmaev/BuildServer#credits)
 
 # Addictions
