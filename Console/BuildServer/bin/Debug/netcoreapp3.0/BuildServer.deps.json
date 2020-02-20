@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v3.0": {
       "BuildServer/1.0.0": {
         "dependencies": {
-          "FubarDev.FtpServer": "3.1.2-beta.5"
+          "FubarDev.FtpServer": "3.1.2-beta.5",
+          "FubarDev.FtpServer.FileSystem.DotNet": "3.1.2-beta.5",
+          "Microsoft.Extensions.DependencyInjection": "3.1.2"
         },
         "runtime": {
           "BuildServer.dll": {}
@@ -30,7 +32,7 @@
       "FubarDev.FtpServer.Abstractions/3.1.2-beta.5": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "2.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.2",
           "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
           "Microsoft.Extensions.Options": "2.0.0",
           "NGettext": "0.6.3",
@@ -52,6 +54,18 @@
         },
         "runtime": {
           "lib/netstandard2.1/FubarDev.FtpServer.Commands.dll": {
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.1.2.0"
+          }
+        }
+      },
+      "FubarDev.FtpServer.FileSystem.DotNet/3.1.2-beta.5": {
+        "dependencies": {
+          "FubarDev.FtpServer.Abstractions": "3.1.2-beta.5",
+          "Microsoft.Extensions.Options": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/FubarDev.FtpServer.FileSystem.DotNet.dll": {
             "assemblyVersion": "3.1.2.0",
             "fileVersion": "3.1.2.0"
           }
@@ -106,11 +120,22 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+      "Microsoft.Extensions.DependencyInjection/3.1.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.100.220.6706"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.2": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.17205"
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.100.220.6706"
           }
         }
       },
@@ -139,7 +164,7 @@
       },
       "Microsoft.Extensions.Options/2.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.2",
           "Microsoft.Extensions.Primitives": "2.0.0"
         },
         "runtime": {
@@ -307,7 +332,7 @@
       "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "Scrutor/2.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.2",
           "Microsoft.Extensions.DependencyModel": "1.1.0",
           "NETStandard.Library": "1.6.1"
         },
@@ -963,6 +988,13 @@
       "path": "fubardev.ftpserver.commands/3.1.2-beta.5",
       "hashPath": "fubardev.ftpserver.commands.3.1.2-beta.5.nupkg.sha512"
     },
+    "FubarDev.FtpServer.FileSystem.DotNet/3.1.2-beta.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-20wkOCTwEP6IcPikePQF/JBu79PcFTnYbe+KQM4HhKLF4VCnBYGzQ+eBywWdWNAU3rpQQwOcAriXi8j9heDgKA==",
+      "path": "fubardev.ftpserver.filesystem.dotnet/3.1.2-beta.5",
+      "hashPath": "fubardev.ftpserver.filesystem.dotnet.3.1.2-beta.5.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Http.Features/2.0.0": {
       "type": "package",
       "serviceable": true,
@@ -984,12 +1016,19 @@
       "path": "microsoft.dotnet.platformabstractions/1.1.0",
       "hashPath": "microsoft.dotnet.platformabstractions.1.1.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+    "Microsoft.Extensions.DependencyInjection/3.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512"
+      "sha512": "sha512-e+F6/wjQPOFHB/sGWTAqC8FX/C6+JZWWLpryXTAQYIS3tr+17lByADdP9Y6RtxfJ4kW/IPrU6RuxTNZNdAQz1A==",
+      "path": "microsoft.extensions.dependencyinjection/3.1.2",
+      "hashPath": "microsoft.extensions.dependencyinjection.3.1.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/CZzCSCIm/3FFoXHfUpsfov/Elo268dcvlz/MMINT0vPgphqg2pAgdEn/EjCDyoAT3NAmsRmjfGwBumC1uYJtA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.2",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.1.2.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyModel/1.1.0": {
       "type": "package",

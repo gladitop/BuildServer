@@ -1,32 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Дамир\\source\\repos\\BuildServer\\BuildServer\\BuildServer.csproj": {}
+    "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Дамир\\source\\repos\\BuildServer\\BuildServer\\BuildServer.csproj": {
+    "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дамир\\source\\repos\\BuildServer\\BuildServer\\BuildServer.csproj",
+        "projectUniqueName": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
         "projectName": "BuildServer",
-        "projectPath": "C:\\Users\\Дамир\\source\\repos\\BuildServer\\BuildServer\\BuildServer.csproj",
+        "projectPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
         "packagesPath": "C:\\Users\\Дамир\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дамир\\source\\repos\\BuildServer\\BuildServer\\obj\\",
+        "outputPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Дамир\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,6 +41,14 @@
             "FubarDev.FtpServer": {
               "target": "Package",
               "version": "[3.1.2-beta.5, )"
+            },
+            "FubarDev.FtpServer.FileSystem.DotNet": {
+              "target": "Package",
+              "version": "[3.1.2-beta.5, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.2, )"
             }
           },
           "imports": [

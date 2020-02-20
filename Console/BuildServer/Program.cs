@@ -1,4 +1,5 @@
 ﻿using System;
+using FubarDev.FtpServer;
 
 namespace BuildServer
 {
@@ -7,7 +8,9 @@ namespace BuildServer
         static void Main(string[] args)
         {
             Console.Title = "BuildServer";
-            Console.WriteLine("This is BuildServer!");
+            Desing.ShowIcon();
+            FTP.Start();
+            //Commands.While();
         }
     }
 }

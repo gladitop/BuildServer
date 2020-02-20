@@ -48,6 +48,19 @@
           "lib/netstandard2.1/FubarDev.FtpServer.Commands.dll": {}
         }
       },
+      "FubarDev.FtpServer.FileSystem.DotNet/3.1.2-beta.5": {
+        "type": "package",
+        "dependencies": {
+          "FubarDev.FtpServer.Abstractions": "3.1.2-beta.5",
+          "Microsoft.Extensions.Options": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FubarDev.FtpServer.FileSystem.DotNet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FubarDev.FtpServer.FileSystem.DotNet.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Http.Features/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -106,7 +119,19 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+      "Microsoft.Extensions.DependencyInjection/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.2"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
@@ -1590,6 +1615,29 @@
         "lib/netstandard2.1/FubarDev.FtpServer.Commands.xml"
       ]
     },
+    "FubarDev.FtpServer.FileSystem.DotNet/3.1.2-beta.5": {
+      "sha512": "20wkOCTwEP6IcPikePQF/JBu79PcFTnYbe+KQM4HhKLF4VCnBYGzQ+eBywWdWNAU3rpQQwOcAriXi8j9heDgKA==",
+      "type": "package",
+      "path": "fubardev.ftpserver.filesystem.dotnet/3.1.2-beta.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fubardev.ftpserver.filesystem.dotnet.3.1.2-beta.5.nupkg.sha512",
+        "fubardev.ftpserver.filesystem.dotnet.nuspec",
+        "lib/net461/FubarDev.FtpServer.FileSystem.DotNet.dll",
+        "lib/net461/FubarDev.FtpServer.FileSystem.DotNet.pdb",
+        "lib/net461/FubarDev.FtpServer.FileSystem.DotNet.xml",
+        "lib/netstandard1.3/FubarDev.FtpServer.FileSystem.DotNet.dll",
+        "lib/netstandard1.3/FubarDev.FtpServer.FileSystem.DotNet.pdb",
+        "lib/netstandard1.3/FubarDev.FtpServer.FileSystem.DotNet.xml",
+        "lib/netstandard2.0/FubarDev.FtpServer.FileSystem.DotNet.dll",
+        "lib/netstandard2.0/FubarDev.FtpServer.FileSystem.DotNet.pdb",
+        "lib/netstandard2.0/FubarDev.FtpServer.FileSystem.DotNet.xml",
+        "lib/netstandard2.1/FubarDev.FtpServer.FileSystem.DotNet.dll",
+        "lib/netstandard2.1/FubarDev.FtpServer.FileSystem.DotNet.pdb",
+        "lib/netstandard2.1/FubarDev.FtpServer.FileSystem.DotNet.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Http.Features/2.0.0": {
       "sha512": "yk62muzFTZTKCQuo3nmVPkPvGBlM2qbdSxbX62TufuONuKQrTGQ/SwhwBbYutk5/YY7u4HETu0n9BKOn7mMgmA==",
       "type": "package",
@@ -1674,16 +1722,37 @@
         "microsoft.dotnet.platformabstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
+    "Microsoft.Extensions.DependencyInjection/3.1.2": {
+      "sha512": "e+F6/wjQPOFHB/sGWTAqC8FX/C6+JZWWLpryXTAQYIS3tr+17lByADdP9Y6RtxfJ4kW/IPrU6RuxTNZNdAQz1A==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
+      "path": "microsoft.extensions.dependencyinjection/3.1.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.3.1.2.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.2": {
+      "sha512": "/CZzCSCIm/3FFoXHfUpsfov/Elo268dcvlz/MMINT0vPgphqg2pAgdEn/EjCDyoAT3NAmsRmjfGwBumC1uYJtA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.3.1.2.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
@@ -5372,37 +5441,32 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "FubarDev.FtpServer >= 3.1.2-beta.5"
+      "FubarDev.FtpServer >= 3.1.2-beta.5",
+      "FubarDev.FtpServer.FileSystem.DotNet >= 3.1.2-beta.5",
+      "Microsoft.Extensions.DependencyInjection >= 3.1.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Дамир\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Дамир\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Дамир\\source\\repos\\BuildServer\\BuildServer\\BuildServer.csproj",
+      "projectUniqueName": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
       "projectName": "BuildServer",
-      "projectPath": "C:\\Users\\Дамир\\source\\repos\\BuildServer\\BuildServer\\BuildServer.csproj",
+      "projectPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
       "packagesPath": "C:\\Users\\Дамир\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Дамир\\source\\repos\\BuildServer\\BuildServer\\obj\\",
+      "outputPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
         "C:\\Users\\Дамир\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5422,6 +5486,14 @@
           "FubarDev.FtpServer": {
             "target": "Package",
             "version": "[3.1.2-beta.5, )"
+          },
+          "FubarDev.FtpServer.FileSystem.DotNet": {
+            "target": "Package",
+            "version": "[3.1.2-beta.5, )"
+          },
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[3.1.2, )"
           }
         },
         "imports": [
