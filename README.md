@@ -12,16 +12,16 @@
 ```This is a program for creating your ftp/tcp server for storing data```
 
 ## GUI
-
-```This type of program runs on Windows OS.
-It has a graphical shell.```
+```
+This type of program runs on Windows OS.
+It has a graphical shell.
 ```
 
 ## Console
-
-```This type of program is suitable for running Windows, Linux, and Mac OC.
+```
+This type of program is suitable for running Windows, Linux, and Mac OC.
 It does not have a graphical shell.
-Because this is a console version of programs!```
+Because this is a console version of programs!
 ```
 
 # Detention
