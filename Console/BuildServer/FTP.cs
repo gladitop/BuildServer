@@ -19,13 +19,15 @@ namespace BuildServer
         {
             var servis = new ServiceCollection();
 
-            servis.Configure<DotNetFileSystemOptions>(opt => opt.RootPath = "Test");
-            servis.AddFtpServer(builder => builder.UseDotNetFileSystem().EnableAnonymousAuthentication());
+            servis.Configure<DotNetFileSystemOptions>(opt => { opt.RootPath = "Test"; });
+            servis.AddFtpServer(builder => { builder.UseDotNetFileSystem().EnableAnonymousAuthentication();});
 
-            servis.Configure<FtpServerOptions>(opt => { opt.ServerAddress = "127.0.0.1"; opt.Port = 987; opt.MaxActiveConnections = 10; });
-
+            //servis.Configure<FtpServerOptions>(opt => { opt.ServerAddress = "127.0.0.1"; opt.Port = 987; opt.MaxActiveConnections = 10; });
+            servis.ConfigureAll<FtpServerOptions>(opt => { opt.Port = 987; opt.MaxActiveConnections = 10; });
+            //servis.PostConfigureAll<PostConfigureOptions<AuthTlsOptions>>(opt => { opt.});
+            servis.AddOptions();
             using (var servisprod = servis.BuildServiceProvider())
-            {
+            { 
                 var ftpserverHost = servisprod.GetRequiredService<IFtpServerHost>();
                 ftpserverHost.StartAsync(CancellationToken.None).Wait();
                 Console.ReadLine();
