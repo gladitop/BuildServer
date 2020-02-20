@@ -19,10 +19,10 @@ namespace BuildServer
         {
             var servis = new ServiceCollection();
 
-            servis.Configure<DotNetFileSystemOptions>(opt => opt.RootPath = Path.Combine(Path.GetTempPath(), "Tets"));
+            servis.Configure<DotNetFileSystemOptions>(opt => opt.RootPath = "Test");
             servis.AddFtpServer(builder => builder.UseDotNetFileSystem().EnableAnonymousAuthentication());
 
-            servis.Configure<FtpServerOptions>(opt => opt.ServerAddress = "127.0.0.1");
+            servis.Configure<FtpServerOptions>(opt => { opt.ServerAddress = "127.0.0.1"; opt.Port = 987; opt.MaxActiveConnections = 10; });
 
             using (var servisprod = servis.BuildServiceProvider())
             {
