@@ -28,6 +28,7 @@
 * [Prerequisites](https://github.com/damiralmaev/BuildServer#prerequisites)
 * [Using](https://github.com/damiralmaev/BuildServer#using)
 * [NuGet packages](https://github.com/damiralmaev/BuildServer#nuget-packages)
+* [Credits](https://github.com/damiralmaev/BuildServer#сredits)
 
 # Addictions
 
@@ -43,6 +44,7 @@
 
 * Access to the Internet
 * Open ports
+* 64 bit
 
 # Prerequisites
 
@@ -67,3 +69,9 @@
 | `GUI`          | Graphical version   |
 | `InstallFile`  | Installation Files  |
 | `Install`      | Installer           |
+
+# Credits
+
+***Damir Maratovich Almaev***
+
+![](https://i.ibb.co/MPNCfRY/Oz-Why-JWm-M8.jpgi)
