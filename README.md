@@ -72,6 +72,7 @@ Because this is a console version of programs!
 | `GUI`          | Graphical version   |
 | `InstallFile`  | Installation Files  |
 | `Install`      | Installer           |
+| `Soon`         | For adding          |
 
 # Credits
 
