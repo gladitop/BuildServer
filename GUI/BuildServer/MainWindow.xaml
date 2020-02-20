@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuildServer"
         mc:Ignorable="d"
-        Title="BuildServer: Main menu" Height="450" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen" Width="800">
+        Title="BuildServer: Main menu" Height="450" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen" Width="800" Closing="Window_Closing">
     <Grid>
         <ListBox HorizontalAlignment="Left" Width="155" Margin="0,0,0,63"/>
         <Button x:Name="btaddserver" ToolTip="Add server" Margin="2,0,0,9" HorizontalAlignment="Left" Width="75" Height="49" VerticalAlignment="Bottom" Click="btaddserver_Click">
@@ -18,9 +18,11 @@
                 <Image Source="Resources/DeleteServer.png" Height="36" Width="36" />
             </StackPanel>
         </Button>
-        <Border Background="#FF41BFBD" BorderThickness="1" Margin="155,0,-0.4,0" Height="51" VerticalAlignment="Top">
-            <Image IsEnabled="True" ToolTip="Start server" Source="Resources\StartBt.png" Height="51" Margin="0,-0.8,9.4,-0.6" VerticalAlignment="Top" HorizontalAlignment="Right" Width="51"/>
-        </Border>
+        <Grid Background="#FF41BFBD" Margin="155,0,-0.4,0" Height="51" VerticalAlignment="Top">
+            <Image IsEnabled="True" ToolTip="Start server" Source="Resources/StartBt.png" Height="51" Margin="0,-0.8,9.4,-0.6" VerticalAlignment="Top" HorizontalAlignment="Right" Width="51"/>
+            <Image IsEnabled="True" ToolTip="Settings the server" Source="Resources/Settings.png" Height="51" Margin="0,-1,65,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="51"/>
+            <Button x:Name="btssettings" Content="Button" Margin="0,0,65,0" VerticalAlignment="Top" Height="50" Click="btssettings_Click" HorizontalAlignment="Right" Width="51" Opacity="0"/>
+        </Grid>
         <TabControl Margin="155,51,9.6,10">
             <TabItem Header="Information">
                 <Grid Background="#FFE5E5E5"/>
@@ -29,5 +31,6 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
+
     </Grid>
 </Window>

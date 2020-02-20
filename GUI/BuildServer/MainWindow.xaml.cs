@@ -35,5 +35,16 @@ namespace BuildServer
         {
 
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)//Close
+        {
+            Environment.Exit(0);
+        }
+
+        private void btssettings_Click(object sender, RoutedEventArgs e)//settings
+        {
+            SettingsForm settings = new SettingsForm();
+            settings.ShowDialog();
+        }
     }
 }

@@ -69,3 +69,9 @@ C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\Syste
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\System.Threading.Channels.xml
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\BuildServer.csproj.CopyComplete
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\Other\Start.g.cs
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\StartProgram.g.cs
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\Other\Start.baml
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\StartProgram.baml
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\SettingsForm.g.cs
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\SettingsForm.baml
