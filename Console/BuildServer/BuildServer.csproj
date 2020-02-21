@@ -15,7 +15,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="chilkat-x64" Version="9.5.0.80" />
     <PackageReference Include="FubarDev.FtpServer" Version="3.1.2-beta.5" />
     <PackageReference Include="FubarDev.FtpServer.FileSystem.DotNet" Version="3.1.2-beta.5" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.2" />

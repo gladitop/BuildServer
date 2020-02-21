@@ -12,12 +12,11 @@
         <dependency id="FubarDev.FtpServer" version="3.1.2-beta.5" exclude="Build,Analyzers" />
         <dependency id="FubarDev.FtpServer.FileSystem.DotNet" version="3.1.2-beta.5" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.DependencyInjection" version="3.1.2" exclude="Build,Analyzers" />
-        <dependency id="chilkat-x64" version="9.5.0.80" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\Lab_IT\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\BuildServer.runtimeconfig.json" target="lib\netcoreapp3.0\BuildServer.runtimeconfig.json" />
-    <file src="C:\Users\Lab_IT\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\BuildServer.dll" target="lib\netcoreapp3.0\BuildServer.dll" />
+    <file src="C:\Users\Дамир\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\BuildServer.runtimeconfig.json" target="lib\netcoreapp3.0\BuildServer.runtimeconfig.json" />
+    <file src="C:\Users\Дамир\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\BuildServer.dll" target="lib\netcoreapp3.0\BuildServer.dll" />
   </files>
 </package>

@@ -10,19 +10,10 @@
         "dependencies": {
           "FubarDev.FtpServer": "3.1.2-beta.5",
           "FubarDev.FtpServer.FileSystem.DotNet": "3.1.2-beta.5",
-          "Microsoft.Extensions.DependencyInjection": "3.1.2",
-          "chilkat-x64": "9.5.0.80"
+          "Microsoft.Extensions.DependencyInjection": "3.1.2"
         },
         "runtime": {
           "BuildServer.dll": {}
-        }
-      },
-      "chilkat-x64/9.5.0.80": {
-        "runtime": {
-          "lib/net461/ChilkatDotNet46.dll": {
-            "assemblyVersion": "9.5.0.80",
-            "fileVersion": "9.5.0.80"
-          }
         }
       },
       "FubarDev.FtpServer/3.1.2-beta.5": {
@@ -975,13 +966,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "chilkat-x64/9.5.0.80": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-CffnYV78CRxWIJrl8Zu4m3Q8RAiTr8qLPoyAGV+O5KNZYr7NfrBK4DlXOA+Ky7UJF/JBvQ9RdA68pW+SAC6QWQ==",
-      "path": "chilkat-x64/9.5.0.80",
-      "hashPath": "chilkat-x64.9.5.0.80.nupkg.sha512"
     },
     "FubarDev.FtpServer/3.1.2-beta.5": {
       "type": "package",

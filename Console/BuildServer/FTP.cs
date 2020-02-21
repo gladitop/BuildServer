@@ -11,6 +11,10 @@ using FubarDev.FtpServer.FileSystem.DotNet;
 using System.IO;
 using System.Threading;
 using System.Security.Cryptography.X509Certificates;
+using FubarDev.FtpServer.AccountManagement;
+using FubarDev.FtpServer.Authentication;
+using FubarDev.FtpServer.Authorization;
+//Нужно больше библиотек!
 
 namespace BuildServer
 {
@@ -22,13 +26,19 @@ namespace BuildServer
             var servis = new ServiceCollection();
 
             servis.Configure<DotNetFileSystemOptions>(opt => { opt.RootPath = "Test"; });
-            servis.AddFtpServer(builder => { builder.UseDotNetFileSystem().EnableAnonymousAuthentication();});
+            servis.AddFtpServer(builder => { builder.UseDotNetFileSystem().EnableAnonymousAuthentication(); });
 
             //servis.Configure<FtpServerOptions>(opt => { opt.ServerAddress = "127.0.0.1"; opt.Port = 987; opt.MaxActiveConnections = 10; });
             servis.ConfigureAll<FtpServerOptions>(opt => { opt.Port = 987; opt.ConnectionInactivityCheckInterval = new TimeSpan(0, 0, 10); opt.MaxActiveConnections = 10; });
             //servis.PostConfigureAll<PostConfigureOptions<AuthTlsOptions>>(opt => { opt.});
 
-            // Это нужно простестить!
+            servis.Configure<FtpConnectionOptions>(opt => { opt.InactivityTimeout = new TimeSpan(0, 0, 10); });
+            //servis.ConfigureAll<IMembershipProvider>(opt => { opt. });
+            //servis.ConfigureAll<IAnonymousFtpUser>(opt => { opt.Name = "GLadi"; });
+            //servis.ConfigureAll<AuthenticationMechanism>(opt => { opt.});
+            //servis.ConfigureAll<FtpLoginStateMachine>(opt => { opt.});
+
+            // Это нужно простестить! (готово)
             var cert = new X509Certificate2("ssl.pfx", "9382034");
             //servis.Configure<AuthTlsOptions>
             servis.Configure<AuthTlsOptions>(cfg => {

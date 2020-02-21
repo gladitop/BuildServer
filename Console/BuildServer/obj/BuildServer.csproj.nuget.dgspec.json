@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lab_IT\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {}
+    "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lab_IT\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {
+    "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lab_IT\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
+        "projectUniqueName": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
         "projectName": "BuildServer",
-        "projectPath": "C:\\Users\\Lab_IT\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
-        "packagesPath": "C:\\Users\\Lab_IT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lab_IT\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\obj\\",
+        "projectPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
+        "packagesPath": "C:\\Users\\Дамир\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lab_IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Дамир\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -53,10 +54,6 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[3.1.2, )"
-            },
-            "chilkat-x64": {
-              "target": "Package",
-              "version": "[9.5.0.80, )"
             }
           },
           "imports": [
@@ -74,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
