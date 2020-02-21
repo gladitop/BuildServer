@@ -14,6 +14,9 @@ using System.Security.Cryptography.X509Certificates;
 using FubarDev.FtpServer.AccountManagement;
 using FubarDev.FtpServer.Authentication;
 using FubarDev.FtpServer.Authorization;
+using FubarDev.FtpServer.ServerCommands;
+using FubarDev.FtpServer.Utilities;
+using FubarDev.FtpServer.AccountManagement.Anonymous;
 //Нужно больше библиотек!
 
 namespace BuildServer
@@ -26,8 +29,8 @@ namespace BuildServer
             var servis = new ServiceCollection();
 
             servis.Configure<DotNetFileSystemOptions>(opt => { opt.RootPath = "Test"; });
-            servis.AddFtpServer(builder => { builder.UseDotNetFileSystem().EnableAnonymousAuthentication(); });
-
+            //servis.AddFtpServer(builder => { builder.UseDotNetFileSystem().EnableAnonymousAuthentication(); });
+            servis.AddFtpServer(builder => { builder.UseDotNetFileSystem(); });
             //servis.Configure<FtpServerOptions>(opt => { opt.ServerAddress = "127.0.0.1"; opt.Port = 987; opt.MaxActiveConnections = 10; });
             servis.ConfigureAll<FtpServerOptions>(opt => { opt.Port = 987; opt.ConnectionInactivityCheckInterval = new TimeSpan(0, 0, 10); opt.MaxActiveConnections = 10; });
             //servis.PostConfigureAll<PostConfigureOptions<AuthTlsOptions>>(opt => { opt.});
@@ -37,13 +40,23 @@ namespace BuildServer
             //servis.ConfigureAll<IAnonymousFtpUser>(opt => { opt.Name = "GLadi"; });
             //servis.ConfigureAll<AuthenticationMechanism>(opt => { opt.});
             //servis.ConfigureAll<FtpLoginStateMachine>(opt => { opt.});
-
+            //servis.ConfigureAll<FubarDev.FtpServer.Authorization.PasswordAuthorization>(opt => { )});
+            //IFtpConnection lol;
+            //servis.PostConfigureAll<PasswordAuthorization>(o => { lol = o.Connection; });
+            //servis.ConfigureAll<FtpCommand>(opt => { });
+            //servis.ConfigureAll<FtpConnection>(opt => { opt.});
+            //servis.ConfigureAll<AnonymousFtpUser>(opt => { opt.});
+            //servis.ConfigureAll<FubarDev.FtpServer.Utilities.DirectoryListingEnumerator>(opt => opt.);
             // Это нужно простестить! (готово)
+            //servis.ConfigureAll<FubarDev.FtpServer.Authorization.PasswordAuthorization>(opt => { IFtpConnection lol = opt.Connection; lol.});
+            //servis.ConfigureAll<AuthorizationRam>
+            servis.ConfigureAll<IMembershipProvider>( opt => { opt.ValidateUserAsync("Gladi", "12345").Start(); });
+            servis.ConfigureAll<SimpleMailAddressValidation>(opt => { opt.IsValid("12345"); });
+
             var cert = new X509Certificate2("ssl.pfx", "9382034");
-            //servis.Configure<AuthTlsOptions>
             servis.Configure<AuthTlsOptions>(cfg => {
                 cfg.ServerCertificate = cert;
-                cfg.ImplicitFtps = false;
+                cfg.ImplicitFtps = true;
             });
             //
 
