@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {}
+    "C:\\Users\\Lab_IT\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {
+    "C:\\Users\\Lab_IT\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
+        "projectUniqueName": "C:\\Users\\Lab_IT\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
         "projectName": "BuildServer",
-        "projectPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
-        "packagesPath": "C:\\Users\\Дамир\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\obj\\",
+        "projectPath": "C:\\Users\\Lab_IT\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
+        "packagesPath": "C:\\Users\\Lab_IT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lab_IT\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Дамир\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lab_IT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -75,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

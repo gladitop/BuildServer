@@ -29,7 +29,8 @@ namespace BuildServer
             //servis.PostConfigureAll<PostConfigureOptions<AuthTlsOptions>>(opt => { opt.});
 
             // Это нужно простестить!
-            var cert = new X509Certificate2("localhost.pfx", "password");
+            var cert = new X509Certificate2("ssl.pfx", "9382034");
+            //servis.Configure<AuthTlsOptions>
             servis.Configure<AuthTlsOptions>(cfg => {
                 cfg.ServerCertificate = cert;
                 cfg.ImplicitFtps = false;
