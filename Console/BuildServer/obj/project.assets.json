@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.0": {
+      "chilkat-x64/9.5.0.80": {
+        "type": "package",
+        "compile": {
+          "lib/net461/ChilkatDotNet46.dll": {}
+        },
+        "runtime": {
+          "lib/net461/ChilkatDotNet46.dll": {}
+        }
+      },
       "FubarDev.FtpServer/3.1.2-beta.5": {
         "type": "package",
         "dependencies": {
@@ -1537,6 +1546,30 @@
     }
   },
   "libraries": {
+    "chilkat-x64/9.5.0.80": {
+      "sha512": "CffnYV78CRxWIJrl8Zu4m3Q8RAiTr8qLPoyAGV+O5KNZYr7NfrBK4DlXOA+Ky7UJF/JBvQ9RdA68pW+SAC6QWQ==",
+      "type": "package",
+      "path": "chilkat-x64/9.5.0.80",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "chilkat-x64.9.5.0.80.nupkg.sha512",
+        "chilkat-x64.nuspec",
+        "lib/net20/ChilkatDotNet2.dll",
+        "lib/net35/ChilkatDotNet2.dll",
+        "lib/net40/ChilkatDotNet4.dll",
+        "lib/net403/ChilkatDotNet4.dll",
+        "lib/net45/ChilkatDotNet45.dll",
+        "lib/net451/ChilkatDotNet45.dll",
+        "lib/net452/ChilkatDotNet45.dll",
+        "lib/net46/ChilkatDotNet46.dll",
+        "lib/net461/ChilkatDotNet46.dll",
+        "lib/net462/ChilkatDotNet46.dll",
+        "lib/net47/ChilkatDotNet47.dll",
+        "lib/net471/ChilkatDotNet47.dll",
+        "lib/net48/ChilkatDotNet48.dll"
+      ]
+    },
     "FubarDev.FtpServer/3.1.2-beta.5": {
       "sha512": "SKSiYcqC7mQai2NBJC6ir21PZ42jYqd4NJl4zhdnT2XPLF9I1BYsVsKubETE/0NKvrsKMYldaecoNeZOCRBlCA==",
       "type": "package",
@@ -5443,11 +5476,14 @@
     ".NETCoreApp,Version=v3.0": [
       "FubarDev.FtpServer >= 3.1.2-beta.5",
       "FubarDev.FtpServer.FileSystem.DotNet >= 3.1.2-beta.5",
-      "Microsoft.Extensions.DependencyInjection >= 3.1.2"
+      "Microsoft.Extensions.DependencyInjection >= 3.1.2",
+      "chilkat-x64 >= 9.5.0.80"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Дамир\\.nuget\\packages\\": {}
+    "C:\\Users\\Дамир\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5458,15 +5494,20 @@
       "packagesPath": "C:\\Users\\Дамир\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\Дамир\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5494,6 +5535,10 @@
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[3.1.2, )"
+          },
+          "chilkat-x64": {
+            "target": "Package",
+            "version": "[9.5.0.80, )"
           }
         },
         "imports": [
@@ -5514,5 +5559,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"chilkat-x64 9.5.0.80\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "chilkat-x64",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    }
+  ]
 }

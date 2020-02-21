@@ -52,3 +52,4 @@ C:\Users\Дамир\Documents\GitHub\BuildServer\Console\BuildServer\obj\Debug\n
 C:\Users\Дамир\Documents\GitHub\BuildServer\Console\BuildServer\obj\Debug\netcoreapp3.0\BuildServer.pdb
 C:\Users\Дамир\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Дамир\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\FubarDev.FtpServer.FileSystem.DotNet.dll
+C:\Users\Дамир\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\ChilkatDotNet46.dll

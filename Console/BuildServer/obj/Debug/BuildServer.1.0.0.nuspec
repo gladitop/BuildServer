@@ -12,6 +12,7 @@
         <dependency id="FubarDev.FtpServer" version="3.1.2-beta.5" exclude="Build,Analyzers" />
         <dependency id="FubarDev.FtpServer.FileSystem.DotNet" version="3.1.2-beta.5" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.DependencyInjection" version="3.1.2" exclude="Build,Analyzers" />
+        <dependency id="chilkat-x64" version="9.5.0.80" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>

@@ -10,9 +10,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="chilkat-x64" Version="9.5.0.80" />
     <PackageReference Include="FubarDev.FtpServer" Version="3.1.2-beta.5" />
     <PackageReference Include="FubarDev.FtpServer.FileSystem.DotNet" Version="3.1.2-beta.5" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.2" />
