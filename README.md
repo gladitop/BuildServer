@@ -24,6 +24,12 @@ It does not have a graphical shell.
 Because this is a console version of programs!
 ```
 
+## Android
+```
+This type of program runs on Android.
+It has a graphical shell.
+```
+
 # Detention
 
 * [Addictions](https://github.com/damiralmaev/BuildServer#addictions)
@@ -73,9 +79,11 @@ Because this is a console version of programs!
 | `InstallFile`  | Installation Files  |
 | `Install`      | Installer           |
 | `Soon`         | For adding          |
+| `Other`        | This is Other       |
+| `Android`      | Android version     |
 
 # Credits
 
-***Damir Maratovich Almaev*** (13 old)
+***Damir Maratovich Almaev*** (13 old and From Russia)
 
 ![](https://i.ibb.co/MPNCfRY/Oz-Why-JWm-M8.jpgi)
