@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuildServer"
         mc:Ignorable="d"
-        Title="SettingsForm" Height="450" Width="800">
+        Title="BuildServer: Settings" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Resources\SettingsIcon.ico" Height="450" Width="393.939">
     <Grid>
         
     </Grid>

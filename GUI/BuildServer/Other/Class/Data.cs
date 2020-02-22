@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BuildServer.Other.Class
 {
-    class Data
+    static public class Data
     {
+        static public string RootPlaceFolder { get; set; } = null;
+        static public string RootNameFolder { get; set; } = null;
     }
 }

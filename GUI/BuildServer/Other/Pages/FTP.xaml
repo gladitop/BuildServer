@@ -1,0 +1,19 @@
+﻿<Page x:Class="BuildServer.Other.Pages.FTP"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BuildServer.Other.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="794"
+      Title="FTP">
+
+    <Grid>
+        <TextBox IsEnabled="False" x:Name="tbrootfoldet" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="116,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="389"/>
+        <Label Content="Storage:" FontSize="25" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Image ToolTip="Select folder" Source="pack://application:,,,/Resources/Directory.png" HorizontalAlignment="Left" Height="39" Margin="530,14,0,0" VerticalAlignment="Top" Width="52"/>
+        <Button x:Name="btselectfolder" Opacity="0" Content="Button" HorizontalAlignment="Left" Margin="530,10,0,0" VerticalAlignment="Top" Width="52" Height="43" Click="btselectfolder_Click"/>
+        <TextBox IsEnabled="True" x:Name="tbnameroot" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="97,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="389"/>
+        <Label Content="Name:" FontSize="25" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
