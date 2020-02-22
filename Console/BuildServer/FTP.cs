@@ -17,41 +17,26 @@ using FubarDev.FtpServer.Authorization;
 using FubarDev.FtpServer.ServerCommands;
 using FubarDev.FtpServer.Utilities;
 using FubarDev.FtpServer.AccountManagement.Anonymous;
+using System.Net;
 //Нужно больше библиотек!
 
 namespace BuildServer
 {
     static public class FTP
     {
+        static string l = "";
         static public void Start()
         {
             /* 1 */
             var servis = new ServiceCollection();
 
             servis.Configure<DotNetFileSystemOptions>(opt => { opt.RootPath = "Test"; });
-            //servis.AddFtpServer(builder => { builder.UseDotNetFileSystem().EnableAnonymousAuthentication(); });
-            servis.AddFtpServer(builder => { builder.UseDotNetFileSystem(); });
-            //servis.Configure<FtpServerOptions>(opt => { opt.ServerAddress = "127.0.0.1"; opt.Port = 987; opt.MaxActiveConnections = 10; });
+            servis.AddFtpServer(builder => { builder.UseDotNetFileSystem().EnableAnonymousAuthentication(); });
             servis.ConfigureAll<FtpServerOptions>(opt => { opt.Port = 987; opt.ConnectionInactivityCheckInterval = new TimeSpan(0, 0, 10); opt.MaxActiveConnections = 10; });
-            //servis.PostConfigureAll<PostConfigureOptions<AuthTlsOptions>>(opt => { opt.});
 
             servis.Configure<FtpConnectionOptions>(opt => { opt.InactivityTimeout = new TimeSpan(0, 0, 10); });
-            //servis.ConfigureAll<IMembershipProvider>(opt => { opt. });
-            //servis.ConfigureAll<IAnonymousFtpUser>(opt => { opt.Name = "GLadi"; });
-            //servis.ConfigureAll<AuthenticationMechanism>(opt => { opt.});
-            //servis.ConfigureAll<FtpLoginStateMachine>(opt => { opt.});
-            //servis.ConfigureAll<FubarDev.FtpServer.Authorization.PasswordAuthorization>(opt => { )});
-            //IFtpConnection lol;
-            //servis.PostConfigureAll<PasswordAuthorization>(o => { lol = o.Connection; });
-            //servis.ConfigureAll<FtpCommand>(opt => { });
-            //servis.ConfigureAll<FtpConnection>(opt => { opt.});
-            //servis.ConfigureAll<AnonymousFtpUser>(opt => { opt.});
-            //servis.ConfigureAll<FubarDev.FtpServer.Utilities.DirectoryListingEnumerator>(opt => opt.);
+
             // Это нужно простестить! (готово)
-            //servis.ConfigureAll<FubarDev.FtpServer.Authorization.PasswordAuthorization>(opt => { IFtpConnection lol = opt.Connection; lol.});
-            //servis.ConfigureAll<AuthorizationRam>
-            servis.ConfigureAll<IMembershipProvider>( opt => { opt.ValidateUserAsync("Gladi", "12345").Start(); });
-            servis.ConfigureAll<SimpleMailAddressValidation>(opt => { opt.IsValid("12345"); });
 
             var cert = new X509Certificate2("ssl.pfx", "9382034");
             servis.Configure<AuthTlsOptions>(cfg => {
@@ -60,9 +45,8 @@ namespace BuildServer
             });
             //
 
-            servis.AddOptions();
             using (var servisprod = servis.BuildServiceProvider())
-            { 
+            {
                 var ftpserverHost = servisprod.GetRequiredService<IFtpServerHost>();
                 ftpserverHost.StartAsync(CancellationToken.None).Wait();
                 Console.ReadLine();
@@ -70,7 +54,7 @@ namespace BuildServer
             }
             
 
-            /* 2
+            /* 2 (Это вопще для подключения!)
 
             // This example requires the Chilkat API to have been previously unlocked.
             // See Global Unlock Sample for sample code.

@@ -152,6 +152,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddServer.xaml.cs">
+      <DependentUpon>AddServer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Other\Class\Data.cs" />
     <Compile Include="Other\Class\FTP\FTPCreate.cs" />
     <Compile Include="Other\Class\FTP\FTPServer.cs" />
@@ -164,6 +167,10 @@
     <Compile Include="StartProgram.xaml.cs">
       <DependentUpon>StartProgram.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddServer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -252,6 +259,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ftp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\tcp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

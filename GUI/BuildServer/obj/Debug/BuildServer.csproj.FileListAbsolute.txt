@@ -75,3 +75,5 @@ C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\Other
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\StartProgram.baml
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\SettingsForm.g.cs
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\SettingsForm.baml
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\AddServer.g.cs
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\AddServer.baml

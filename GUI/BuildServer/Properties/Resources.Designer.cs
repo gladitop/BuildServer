@@ -81,6 +81,16 @@ namespace BuildServer.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ftp {
+            get {
+                object obj = ResourceManager.GetObject("ftp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
         /// </summary>
         internal static System.Drawing.Icon question {
@@ -136,6 +146,16 @@ namespace BuildServer.Properties {
         internal static System.Drawing.Bitmap StopBt {
             get {
                 object obj = ResourceManager.GetObject("StopBt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tcp {
+            get {
+                object obj = ResourceManager.GetObject("tcp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

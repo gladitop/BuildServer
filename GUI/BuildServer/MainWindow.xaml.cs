@@ -28,7 +28,8 @@ namespace BuildServer
 
         private void btaddserver_Click(object sender, RoutedEventArgs e)//Add server
         {
-
+            AddServer addServer = new AddServer();
+            addServer.ShowDialog();
         }
 
         private void btdeleteserver_Click(object sender, RoutedEventArgs e)//Delete server
