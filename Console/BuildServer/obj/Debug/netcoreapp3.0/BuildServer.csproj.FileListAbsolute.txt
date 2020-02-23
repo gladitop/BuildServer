@@ -82,3 +82,4 @@ C:\Users\Lab_IT\Documents\GitHub\BuildServer\Console\BuildServer\obj\Debug\netco
 C:\Users\Lab_IT\Documents\GitHub\BuildServer\Console\BuildServer\obj\Debug\netcoreapp3.0\BuildServer.pdb
 C:\Users\Дамир\Documents\GitHub\BuildServer\Console\BuildServer\obj\Debug\netcoreapp3.0\BuildServer.csprojAssemblyReference.cache
 C:\Users\Дамир\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\Goblinfactory.Konsole.dll
+C:\Users\Дамир\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\Serilog.dll

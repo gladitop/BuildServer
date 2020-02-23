@@ -18,6 +18,7 @@ using FubarDev.FtpServer.ServerCommands;
 using FubarDev.FtpServer.Utilities;
 using FubarDev.FtpServer.AccountManagement.Anonymous;
 using System.Net;
+using Serilog;
 //Нужно больше библиотек!
 
 namespace BuildServer
@@ -27,10 +28,16 @@ namespace BuildServer
         static public void Start()
         {
             /* 1 */
+
+            //Log.Logger = new LoggerConfiguration().MinimumLevel.Verbose().Enrich.FromLogContext().CreateLogger();
+
             var servis = new ServiceCollection();
 
+            // Add Serilog as logger provider
+            //servis.AddLogging(lb => lb.AddSerilog();
             servis.Configure<DotNetFileSystemOptions>(opt => { opt.RootPath = "Test"; });
             servis.AddFtpServer(builder => { builder.UseDotNetFileSystem().EnableAnonymousAuthentication(); });
+            servis.ConfigureAll<AnonymousMembershipProvider>(opt => { opt.ValidateUserAsync("123", "123"); });
             servis.ConfigureAll<FtpServerOptions>(opt => { opt.Port = 987; opt.ConnectionInactivityCheckInterval = new TimeSpan(0, 0, 10); opt.MaxActiveConnections = 10; });
 
             servis.Configure<FtpConnectionOptions>(opt => { opt.InactivityTimeout = new TimeSpan(0, 0, 10); });

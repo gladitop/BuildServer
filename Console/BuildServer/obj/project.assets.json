@@ -504,6 +504,15 @@
           "lib/netstandard1.6/Scrutor.dll": {}
         }
       },
+      "Serilog/2.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2195,6 +2204,27 @@
         "lib/netstandard1.6/Scrutor.xml",
         "scrutor.2.0.0.nupkg.sha512",
         "scrutor.nuspec"
+      ]
+    },
+    "Serilog/2.9.0": {
+      "sha512": "QzcrD33A3+CsVvwi1I5CSei67ikQnkGrw7SscgL+vZTghaC2aNYg8fiUcedXHzKJFNjgje9rBjzwYGQTKEaXaA==",
+      "type": "package",
+      "path": "serilog/2.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.dll",
+        "lib/net45/Serilog.xml",
+        "lib/net46/Serilog.dll",
+        "lib/net46/Serilog.xml",
+        "lib/netstandard1.0/Serilog.dll",
+        "lib/netstandard1.0/Serilog.xml",
+        "lib/netstandard1.3/Serilog.dll",
+        "lib/netstandard1.3/Serilog.xml",
+        "lib/netstandard2.0/Serilog.dll",
+        "lib/netstandard2.0/Serilog.xml",
+        "serilog.2.9.0.nupkg.sha512",
+        "serilog.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -5467,7 +5497,8 @@
       "FubarDev.FtpServer >= 3.1.2-beta.5",
       "FubarDev.FtpServer.FileSystem.DotNet >= 3.1.2-beta.5",
       "Goblinfactory.Konsole >= 6.2.0",
-      "Microsoft.Extensions.DependencyInjection >= 3.1.2"
+      "Microsoft.Extensions.DependencyInjection >= 3.1.2",
+      "Serilog >= 2.9.0"
     ]
   },
   "packageFolders": {
@@ -5529,6 +5560,10 @@
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[3.1.2, )"
+          },
+          "Serilog": {
+            "target": "Package",
+            "version": "[2.9.0, )"
           }
         },
         "imports": [
