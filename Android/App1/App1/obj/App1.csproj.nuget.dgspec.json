@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Дамир\\source\\repos\\App1\\App1\\App1.csproj": {}
+    "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Android\\App1\\App1\\App1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Дамир\\source\\repos\\App1\\App1\\App1.csproj": {
+    "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Android\\App1\\App1\\App1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дамир\\source\\repos\\App1\\App1\\App1.csproj",
+        "projectUniqueName": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Android\\App1\\App1\\App1.csproj",
         "projectName": "App1",
-        "projectPath": "C:\\Users\\Дамир\\source\\repos\\App1\\App1\\App1.csproj",
+        "projectPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Android\\App1\\App1\\App1.csproj",
         "packagesPath": "C:\\Users\\Дамир\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дамир\\source\\repos\\App1\\App1\\obj\\",
+        "outputPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Android\\App1\\App1\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

@@ -1,0 +1,7 @@
+C:\Users\Дамир\Documents\GitHub\BuildServer\Android\App1\App1\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\Дамир\Documents\GitHub\BuildServer\Android\App1\App1\obj\Debug\90\build.props
+C:\Users\Дамир\Documents\GitHub\BuildServer\Android\App1\App1\obj\Debug\90\adb.props
+C:\Users\Дамир\Documents\GitHub\BuildServer\Android\App1\App1\obj\Debug\90\App1.csprojAssemblyReference.cache
+C:\Users\Дамир\Documents\GitHub\BuildServer\Android\App1\App1\obj\Debug\90\stamp\_BuildLibraryImportsCache.stamp
+C:\Users\Дамир\Documents\GitHub\BuildServer\Android\App1\App1\obj\Debug\90\resourcepaths.cache
+C:\Users\Дамир\Documents\GitHub\BuildServer\Android\App1\App1\obj\Debug\90\res.flag
