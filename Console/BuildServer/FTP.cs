@@ -24,7 +24,6 @@ namespace BuildServer
 {
     static public class FTP
     {
-        static string l = "";
         static public void Start()
         {
             /* 1 */

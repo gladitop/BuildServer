@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[3.1.2-beta.5, )"
             },
+            "Goblinfactory.Konsole": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[3.1.2, )"

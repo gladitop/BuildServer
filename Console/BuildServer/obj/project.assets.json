@@ -61,6 +61,15 @@
           "lib/netstandard2.1/FubarDev.FtpServer.FileSystem.DotNet.dll": {}
         }
       },
+      "Goblinfactory.Konsole/6.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Goblinfactory.Konsole.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Goblinfactory.Konsole.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Http.Features/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -1636,6 +1645,20 @@
         "lib/netstandard2.1/FubarDev.FtpServer.FileSystem.DotNet.dll",
         "lib/netstandard2.1/FubarDev.FtpServer.FileSystem.DotNet.pdb",
         "lib/netstandard2.1/FubarDev.FtpServer.FileSystem.DotNet.xml"
+      ]
+    },
+    "Goblinfactory.Konsole/6.2.0": {
+      "sha512": "hdCNwUhiu2bO00N6Pmnyz6gQJnCckMPr47IVugZD5Ig38+BNoW3bSgTzBvpc89933CwDe+5ndNDoPVk310bG6g==",
+      "type": "package",
+      "path": "goblinfactory.konsole/6.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "goblinfactory.konsole.6.2.0.nupkg.sha512",
+        "goblinfactory.konsole.nuspec",
+        "konsole.png",
+        "lib/netstandard2.0/Goblinfactory.Konsole.dll"
       ]
     },
     "Microsoft.AspNetCore.Http.Features/2.0.0": {
@@ -5443,6 +5466,7 @@
     ".NETCoreApp,Version=v3.0": [
       "FubarDev.FtpServer >= 3.1.2-beta.5",
       "FubarDev.FtpServer.FileSystem.DotNet >= 3.1.2-beta.5",
+      "Goblinfactory.Konsole >= 6.2.0",
       "Microsoft.Extensions.DependencyInjection >= 3.1.2"
     ]
   },
@@ -5497,6 +5521,10 @@
           "FubarDev.FtpServer.FileSystem.DotNet": {
             "target": "Package",
             "version": "[3.1.2-beta.5, )"
+          },
+          "Goblinfactory.Konsole": {
+            "target": "Package",
+            "version": "[6.2.0, )"
           },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
