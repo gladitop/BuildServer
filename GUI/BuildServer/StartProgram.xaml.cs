@@ -21,7 +21,9 @@ namespace BuildServer
     /// </summary>
     public partial class StartProgram : Window
     {
-        public bool close = false;
+        bool close = false;
+        bool error = false;
+        string errorinfo = null;
 
         public StartProgram()
         {
@@ -29,9 +31,16 @@ namespace BuildServer
 
             // Loading LICENSE
 
-            using (WebClient web = new WebClient())
+            try
             {
-                tblis.Text = web.DownloadString("https://raw.githubusercontent.com/damiralmaev/BuildServer/master/LICENSE");
+                using (WebClient web = new WebClient())
+                {
+                    tblis.Text = web.DownloadString("https://raw.githubusercontent.com/damiralmaev/BuildServer/master/LICENSE");
+                }
+            }
+            catch (Exception ex) {
+                errorinfo = ex.Message;
+                error = true;
             }
         }
 
@@ -49,6 +58,15 @@ namespace BuildServer
             main.Show();
             close = true;
             this.Close();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (error == true)
+            {
+                MessageBox.Show($"Error! {errorinfo}", Title, MessageBoxButton.OK, MessageBoxImage.Error);
+                Environment.Exit(0);
+            }
         }
     }
 }

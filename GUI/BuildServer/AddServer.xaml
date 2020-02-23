@@ -22,6 +22,13 @@
                     <Frame x:Name="framesettings" Content="" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="392" VerticalAlignment="Top" Width="788"/>
                 </Grid>
             </TabItem>
+            <TabItem Header="Build">
+                <Grid Background="#FFE5E5E5">
+                    <Button Content="Build" FontSize="30" HorizontalAlignment="Left" Margin="304,291,0,0" VerticalAlignment="Top" Width="181" Height="46" Background="#FF9DFF3E"/>
+                    <Label Content="Info" FontSize="40" HorizontalAlignment="Left" Margin="355,10,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>

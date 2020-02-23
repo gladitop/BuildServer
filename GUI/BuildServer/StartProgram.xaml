@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuildServer"
         mc:Ignorable="d"
-        Title="BuildServer: License" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Height="343.939" Width="289.394" Closing="Window_Closing">
+        Title="BuildServer: License" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Height="343.939" Width="289.394" Closing="Window_Closing" Loaded="Window_Loaded">
     <Grid>
         <Label Content="License Acceptance" HorizontalAlignment="Left" Margin="81,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tblis" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" HorizontalAlignment="Left" Height="223" Margin="10,41,0,0" Text="TextBox" VerticalAlignment="Top" Width="263"/>

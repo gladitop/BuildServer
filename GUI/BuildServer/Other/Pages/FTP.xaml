@@ -6,14 +6,23 @@
       xmlns:local="clr-namespace:BuildServer.Other.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="420" d:DesignWidth="794"
-      Title="FTP">
+      Title="BuildServer: Add server">
 
     <Grid>
         <TextBox IsEnabled="False" x:Name="tbrootfoldet" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="116,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="389"/>
         <Label Content="Storage:" FontSize="25" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Image ToolTip="Select folder" Source="pack://application:,,,/Resources/Directory.png" HorizontalAlignment="Left" Height="39" Margin="530,14,0,0" VerticalAlignment="Top" Width="52"/>
         <Button x:Name="btselectfolder" Opacity="0" Content="Button" HorizontalAlignment="Left" Margin="530,10,0,0" VerticalAlignment="Top" Width="52" Height="43" Click="btselectfolder_Click"/>
-        <TextBox IsEnabled="True" x:Name="tbnameroot" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="97,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="389"/>
+        <TextBox IsEnabled="True" x:Name="tbnameroot" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="97,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="389" SelectionChanged="tbnameroot_SelectionChanged"/>
         <Label Content="Name:" FontSize="25" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top"/>
+        <Label Content="Port:" FontSize="25" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top"/>
+        <TextBox IsEnabled="True" x:Name="tbport" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="97,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="148" SelectionChanged="tbport_SelectionChanged" TextChanged="tbport_TextChanged"/>
+        <CheckBox Content="Using TLS" FontSize="25" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top"/>
+        <TextBox IsEnabled="False" x:Name="tbnameroot_Copy" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="140,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="389" SelectionChanged="tbnameroot_SelectionChanged"/>
+        <Label Content="Сertificate:" FontSize="25" HorizontalAlignment="Left" Margin="10,237,0,0" VerticalAlignment="Top"/>
+        <Image ToolTip="Select folder" IsEnabled="False" Source="pack://application:,,,/Resources/Directory.png" HorizontalAlignment="Left" Height="39" Margin="552,237,0,0" VerticalAlignment="Top" Width="52"/>
+        <Button IsEnabled="False" x:Name="btselectcertificate" Opacity="0" Content="Button" HorizontalAlignment="Left" Margin="552,233,0,0" VerticalAlignment="Top" Width="52" Height="43"/>
+        <Label Content="Passworld: " FontSize="25" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top"/>
+        <PasswordBox IsEnabled="False" x:Name="tbnameroot_Copy1" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="141,289,0,0" VerticalAlignment="Top" Width="389"/>
     </Grid>
 </Page>

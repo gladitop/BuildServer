@@ -10,5 +10,6 @@ namespace BuildServer.Other.Class
     {
         static public string RootPlaceFolder { get; set; } = null;
         static public string RootNameFolder { get; set; } = null;
+        static public string Port { get; set; } = null;
     }
 }

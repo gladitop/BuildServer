@@ -47,5 +47,40 @@ namespace BuildServer.Other.Pages
                 Class.Data.RootPlaceFolder = _RootPlaceFolder;
             }
         }
+
+        private void tbnameroot_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            Class.Data.RootNameFolder = tbnameroot.Text;
+        }
+
+        private void tbport_SelectionChanged(object sender, RoutedEventArgs e)// port
+        {
+            /* Error!
+            try
+            {
+                Class.Data.Port = Convert.ToString(tbport.Text);
+            }
+            catch
+            {
+                tbport.Text = "";
+                System.Windows.MessageBox.Show("Error! You can only use numbers!",
+                    Title, MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            */
+        }
+
+        private void tbport_TextChanged(object sender, TextChangedEventArgs e)// port
+        {
+            try
+            {
+                Class.Data.Port = Convert.ToString(tbport.Text);
+            }
+            catch
+            {
+                tbport.Text = "";
+                System.Windows.MessageBox.Show("Error! You can only use numbers!",
+                    Title, MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }
