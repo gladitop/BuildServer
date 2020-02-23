@@ -81,6 +81,7 @@ It has a graphical shell.
 | `Soon`         | For adding          |
 | `Other`        | This is Other       |
 | `Android`      | Android version     |
+| `Update`       | To download updates |
 
 # Credits
 
