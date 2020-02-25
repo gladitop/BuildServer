@@ -4,8 +4,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>BuildServer</title>
-	<!-Подключение (Gladi)-->
+	<!--Подключение (Gladi)-->
 	<link rel="stylesheet" type="text/css" href="Index.css">
+
+	<!--Там javascript!-->
+
+	<script type="text/javascript">
+		function test() {
+			alert("Привет!")
+		}
+	</script>
 </head>
 
 <body>
@@ -24,23 +32,22 @@
     <img class="images" src="root/img/scrConsole.png">
     <br>
     <h4 class="hottil" style="position: relative; text-align: center;">GUI</h4>
-    <img class="images" src="root/img/scrConsole.png">
+    <img class="images" src="root/img/scrConsole.png">s
 
     <br>
     <br>
     <h2 style="position: relative; text-align: center;">Downloads</h2>
     <hr>
 
-    <BUTTON>Download 64 bit Windows</BUTTON>
+    <button onclick="test()">Download 64 bit Windows</button>
     <br>
-    <BUTTON>Download 32 bit Windows</BUTTON>
+    <button onclick="Don32bitWindows()">Download 32 bit Windows</button>
     <br>
-    <BUTTON>Download Linux</BUTTON>
-    <br>
-    <br>
+    <button onclick="DonLinux()">Download Linux</button>
     <br>
     <br>
-    <a href="https://github.com/damiralmaev/BuildServer" class="linkes">github</a>    
-
+    <br>
+    <br>
+    <a href="https://github.com/damiralmaev/BuildServer" class="linkes">github</a>
 </body>
 </html>
