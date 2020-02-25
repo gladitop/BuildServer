@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="BuildServer: Settings" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Resources\SettingsIcon.ico" Height="450" Width="393.939">
     <Grid>
-        <CheckBox Content="Autostart" FontSize="30" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <RadioButton IsChecked="True" IsEnabled="False" Content="Normal start" FontSize="20" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top"/>
-        <RadioButton IsChecked="False" IsEnabled="False" Content="Autostart server" FontSize="20" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top"/>
-        <Button IsEnabled="False" Content="..." HorizontalAlignment="Left" Margin="185,90,0,0" VerticalAlignment="Top" Width="40"/>
-        <Button Content="Save" FontSize="30" HorizontalAlignment="Left" Margin="268,365,0,0" VerticalAlignment="Top" Width="109" Height="45"/>
+        <CheckBox x:Name="checkautostart" Content="Autostart" FontSize="30" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="checkautostart_Click"/>
+        <RadioButton x:Name="radiostart" IsChecked="True" IsEnabled="False" Content="Normal start" FontSize="20" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioserver" IsChecked="False" IsEnabled="False" Content="Autostart server" FontSize="20" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btradioserver" IsEnabled="False" Content="..." HorizontalAlignment="Left" Margin="185,90,0,0" VerticalAlignment="Top" Width="40"/>
+        <Button x:Name="btsave" Content="Save" FontSize="30" HorizontalAlignment="Left" Margin="268,365,0,0" VerticalAlignment="Top" Width="109" Height="45" Click="btsave_Click"/>
         <Button Content="Default" FontSize="30" HorizontalAlignment="Left" Margin="136,365,0,0" VerticalAlignment="Top" Width="127" Height="45"/>
 
     </Grid>
