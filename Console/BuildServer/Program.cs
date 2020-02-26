@@ -9,8 +9,9 @@ namespace BuildServer
         {
             Console.Title = "BuildServer";
             Desing.ShowIcon();
-            FTP.Start();
-            //Commands.While();
+            //FTP.Start();
+            Settings.Open();
+            Commands.While();
         }
     }
 }

@@ -25,6 +25,9 @@ namespace BuildServer
 {
     static public class FTP
     {
+        static public void CreateServer()
+        { }
+
         static public void Start()
         {
             /* 1 */
