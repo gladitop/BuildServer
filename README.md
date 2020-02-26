@@ -82,6 +82,7 @@ It has a graphical shell.
 | `Other`        | This is Other       |
 | `Android`      | Android version     |
 | `Update`       | To download updates |
+| `Website`       | This is a website the program |
 
 # Credits
 
