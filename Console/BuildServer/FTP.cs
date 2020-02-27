@@ -19,6 +19,7 @@ using FubarDev.FtpServer.Utilities;
 using FubarDev.FtpServer.AccountManagement.Anonymous;
 using System.Net;
 using Serilog;
+using Konsole;
 //Нужно больше библиотек!
 
 namespace BuildServer
@@ -26,7 +27,60 @@ namespace BuildServer
     static public class FTP
     {
         static public void CreateServer()
-        { }
+        {
+            string _serverPath = null;
+            string _serverName = null;
+            string _serverPort = null;
+
+            Functions.WriteLine("Server path (it can be skipped)", ConsoleColor.Cyan);
+            _serverPath = Console.ReadLine();
+            Functions.WriteLine("Server  name", ConsoleColor.Cyan);
+            _serverName = Console.ReadLine();
+            Functions.WriteLine("Server  port", ConsoleColor.Cyan);
+            _serverPort = Console.ReadLine();
+
+            var progress = new ProgressBar(PbStyle.DoubleLine, 3);
+            Functions.WriteLine("Create server...", ConsoleColor.Yellow);
+            progress.Refresh(1, "Create folders..");
+
+            string path = null;
+            if (string.IsNullOrWhiteSpace(_serverPath))
+                Directory.CreateDirectory("Server");
+            else
+            {
+                path = Path.Combine(_serverPath, _serverName);
+                Directory.CreateDirectory(path);
+            }
+
+            progress.Refresh(2, "Create config.dll...");
+
+            if (path != null)
+            {
+                using (StreamWriter sw = new StreamWriter(Path.Combine(path, "config.dll")))
+                {
+                    sw.AutoFlush = true;
+
+                    sw.WriteLine("Server type = FTP");
+                    sw.WriteLine($"Server port = {_serverPort}");
+
+                    sw.Close();
+                }
+            }
+            else
+            {
+                using (StreamWriter sw = new StreamWriter(Path.Combine(_serverName, "config.dll")))//Ошибка пути!
+                {
+                    sw.AutoFlush = true;
+
+                    sw.WriteLine("Server type = FTP");
+                    sw.WriteLine($"Server port = {_serverPort}");
+
+                    sw.Close();
+                }
+            }
+
+            Functions.WriteLine("Setup Complete!", ConsoleColor.Cyan);
+        }
 
         static public void Start()
         {

@@ -27,8 +27,10 @@ namespace BuildServer
                     Help();
                 else if (answer.ToLower() == "credits")
                     CreditsInfo();
-                else if (answer.ToLower() == "create")
+                else if (answer.ToLower() == "create ftp")
                     CreateServer();
+                else if (answer.ToLower() == "create tcp")
+                    CreateServerTCP();
                 else if (answer.ToLower() == "delete")
                     DeleteServer();
                 else if (answer.ToLower() == "ver")
@@ -38,6 +40,11 @@ namespace BuildServer
                 else
                     Functions.WriteLine("Error! Write help\n", ConsoleColor.Red);
             }
+        }
+
+        static public void CreateServerTCP()
+        {
+            
         }
 
         static public void Update()
