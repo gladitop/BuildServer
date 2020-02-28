@@ -1,1 +1,3 @@
-Server = False
+Server = True
+ServerRootPath = 
+ServerRootName = Name

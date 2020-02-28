@@ -44,19 +44,23 @@ namespace BuildServer
             progress.Refresh(1, "Create folders..");
 
             string path = null;
-            if (string.IsNullOrWhiteSpace(_serverPath))
+            if (string.IsNullOrWhiteSpace(_serverPath))//Тут может быть ошибка!
+            {
                 Directory.CreateDirectory("Server");
+                Directory.CreateDirectory($@"Server/root");
+            }
             else
             {
                 path = Path.Combine(_serverPath, _serverName);
                 Directory.CreateDirectory(path);
+                Directory.CreateDirectory($@"{path}/root");
             }
 
-            progress.Refresh(2, "Create config.dll...");
+            progress.Refresh(2, "Create config.ini...");
 
             if (path != null)
             {
-                using (StreamWriter sw = new StreamWriter(Path.Combine(path, "config.dll")))
+                using (StreamWriter sw = new StreamWriter(Path.Combine(path, "config.ini")))
                 {
                     sw.AutoFlush = true;
 
@@ -68,7 +72,7 @@ namespace BuildServer
             }
             else
             {
-                using (StreamWriter sw = new StreamWriter(Path.Combine(_serverName, "config.dll")))//Ошибка пути!
+                using (StreamWriter sw = new StreamWriter(Path.Combine("Server" + "/" +"config.ini")))//Ошибка пути! (не правильные переменные!)
                 {
                     sw.AutoFlush = true;
 
@@ -79,7 +83,15 @@ namespace BuildServer
                 }
             }
 
+            progress.Refresh(3, "Done!");
             Functions.WriteLine("Setup Complete!", ConsoleColor.Cyan);
+
+            /*
+            Settings.ServerRootName = _serverName;
+            Settings.ServerRootPath = _serverPath;
+            Settings.Server = true;
+            Settings.Save();
+            */
         }
 
         static public void Start()

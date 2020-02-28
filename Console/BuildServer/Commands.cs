@@ -106,7 +106,8 @@ namespace BuildServer
             Functions.WriteLine("start - start server", ConsoleColor.Yellow);
             Functions.WriteLine("stop - stop server", ConsoleColor.Yellow);
             Functions.WriteLine("credits - info for credits", ConsoleColor.Yellow);
-            Functions.WriteLine("create - create server", ConsoleColor.Yellow);
+            Functions.WriteLine("create ftp - create server (ftp)", ConsoleColor.Yellow);
+            Functions.WriteLine("create tcp - create server (tcp)", ConsoleColor.Yellow);
             Functions.WriteLine("delete - delete server", ConsoleColor.Yellow);
             Functions.WriteLine("ver - ver the program", ConsoleColor.Yellow);
             Functions.WriteLine("update - update the program\n", ConsoleColor.Yellow);

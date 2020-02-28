@@ -38,7 +38,8 @@ namespace BuildServer
 
         static public void Open()
         {
-            if (File.Exists("Settings.dll"))
+            /*
+            if (File.Exists("Settings.dll"))//Ошибка!
             {
                 string[] settingsFile = File.ReadAllLines("Settings.dll");
 
@@ -56,6 +57,7 @@ namespace BuildServer
             }
             else
                 Save();
+                */
         }
     }
 }
