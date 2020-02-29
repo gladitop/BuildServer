@@ -18,7 +18,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\3\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\BuildServer.runtimeconfig.json" target="lib\netcoreapp3.0\BuildServer.runtimeconfig.json" />
-    <file src="C:\Users\3\Documents\GitHub\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\BuildServer.dll" target="lib\netcoreapp3.0\BuildServer.dll" />
+    <file src="C:\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\BuildServer.runtimeconfig.json" target="lib\netcoreapp3.0\BuildServer.runtimeconfig.json" />
+    <file src="C:\BuildServer\Console\BuildServer\bin\Debug\netcoreapp3.0\BuildServer.dll" target="lib\netcoreapp3.0\BuildServer.dll" />
   </files>
 </package>
