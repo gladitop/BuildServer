@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\
+C:\BuildServer\Install\BuildServer\obj\Debug\
 BuildServer
 none
 false
 DEBUG;TRACE
-C:\Users\Дамир\source\repos\BuildServer\BuildServer\App.xaml
-11151548125
+C:\BuildServer\Install\BuildServer\App.xaml
+31162710562
 
-5-2017746502
-14234327685
-MainWindow.xaml;
+81230706731
+14981402222
+MainWindow.xaml;Pages\Installing.xaml;Pages\Welcom.xaml;
 
 False
 
