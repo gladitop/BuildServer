@@ -1,0 +1,16 @@
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\bin\Debug\BuildServer.exe.config
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\bin\Debug\BuildServer.exe
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\bin\Debug\BuildServer.pdb
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\bin\Debug\SharpCompress.dll
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\BuildServer.csprojAssemblyReference.cache
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\MainWindow.g.cs
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\App.g.cs
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\BuildServer_MarkupCompile.cache
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\BuildServer_MarkupCompile.lref
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\MainWindow.baml
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\BuildServer.g.resources
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\BuildServer.Properties.Resources.resources
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\BuildServer.csproj.GenerateResource.cache
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\BuildServer.csproj.CopyComplete
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\BuildServer.exe
+C:\Users\Дамир\source\repos\BuildServer\BuildServer\obj\Debug\BuildServer.pdb
