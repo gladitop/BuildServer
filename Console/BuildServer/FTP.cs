@@ -18,7 +18,6 @@ using FubarDev.FtpServer.ServerCommands;
 using FubarDev.FtpServer.Utilities;
 using FubarDev.FtpServer.AccountManagement.Anonymous;
 using System.Net;
-using Serilog;
 using Konsole;
 //Нужно больше библиотек!
 

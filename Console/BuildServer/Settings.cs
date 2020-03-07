@@ -2,62 +2,47 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace BuildServer
 {
-    static public class Settings
+    public class Settings
     {
         //Переменные для сохранения
 
-        static public string ServerRootPath { get; set; } = null;
-        static public string ServerRootName { get; set; } = null;
-        static public bool Server { get; set; } = false;
+        [JsonProperty("serverRootName")]
+        public string ServerRootName { get; set; } = null;
+        [JsonProperty("server")]
+        public bool Server { get; set; }
+    }
 
-        //Методы для сохранения
-
+    static public class SettingsMes
+    {
         static public void Save()
         {
-            using (StreamWriter wr = new StreamWriter("Settings.dll"))
+            if (File.Exists("Setings.json") == false)
+            { 
+                var settings = new Settings();
+                {
+                    settings.Server = false;
+                    settings.ServerRootName = "";
+                }
+
+                File.WriteAllText("Settings.json", JsonConvert.SerializeObject(settings));
+                Data.settigns = settings;
+            }
+            else
             {
-                wr.AutoFlush = true;
+                var settings = Data.settigns;
 
-                if (Server == false)
-                {
-                    wr.WriteLine($"Server = {Server}");
-                }
-                else if (Server == true)
-                {
-                    wr.WriteLine($"Server = {Server}");
-                    wr.WriteLine($"ServerRootPath = {ServerRootPath}");
-                    wr.WriteLine($"ServerRootName = {ServerRootName}");
-                }
-
-                wr.Close();
+                File.WriteAllText("Settings.json", JsonConvert.SerializeObject(settings));
             }
         }
 
-        static public void Open()
+        static public void Load()
         {
-            /*
-            if (File.Exists("Settings.dll"))//Ошибка!
-            {
-                string[] settingsFile = File.ReadAllLines("Settings.dll");
-
-                if (settingsFile[0] == "Server = False")
-                {
-                    Server = false;
-                    return;
-                }
-                else if (settingsFile[0] == "Server = True")
-                {
-                    Server = true;
-                    ServerRootPath = settingsFile[1].Substring(18);
-                    ServerRootName = settingsFile[2].Substring(18);
-                }
-            }
-            else
-                Save();
-                */
+            var settings = JsonConvert.DeserializeObject<Settings>(File.ReadAllText("Settings.json"));
+            Data.settigns = settings;
         }
     }
 }

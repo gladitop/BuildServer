@@ -80,11 +80,13 @@ namespace BuildServer
 
         static public void CreateServer()
         {
-            if (Settings.Server == true)
+            Settings settings = (Settings)Data.settigns;
+
+            if (settings.Server == true)
             {
                 Functions.WriteLine("You already have a server!\n", ConsoleColor.Red);
             }
-            else if (Settings.Server == false)
+            else if (settings.Server == false)
             {
                 Functions.WriteLine("Are you sure want to create a server? (Y - yes, N - no)",
                     ConsoleColor.Cyan);
