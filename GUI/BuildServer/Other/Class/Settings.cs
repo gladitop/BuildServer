@@ -9,11 +9,25 @@ namespace BuildServer.Other.Class
 {
     public class Settings
     {
+        //переменные для сохранения
+
         [JsonProperty("startProgram")]
-        static public bool StartProgram { get; set; }
+        public bool StartProgram { get; set; }
         [JsonProperty("autoStart")]
-        static public bool AutoStart { get; set; }
+        public bool AutoStart { get; set; }
         [JsonProperty("normalStart")]
-        static public bool NormalStart { get; set; }
+        public bool NormalStart { get; set; }
+        [JsonProperty("listServer")]
+        public List<listServer> ListServer { get; set; } = new List<listServer>();
+
+        //Прочее
+
+        public struct listServer
+        {
+            public string nameServer;
+            public string ver;
+            public string pathServer;
+            public string descriptionServer;
+        }
     }
 }

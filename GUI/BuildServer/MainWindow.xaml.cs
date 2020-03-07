@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FubarDev.FtpServer;
+using BuildServer.Other.Class;
 
 namespace BuildServer
 {
@@ -24,6 +25,16 @@ namespace BuildServer
         public MainWindow()
         {
             InitializeComponent();
+
+            SettingsManager.Save();
+
+            //Other.Class.SettingsManager.Load();
+
+            //var settings = new Settings();
+            //settings.ListServer.Add(new Settings.listServer() { descriptionServer = "2 des", nameServer = "Test 2",
+            //pathServer = "Tester2/lol", ver = "2.0"});
+            ///Data.Settings = settings;
+            //SettingsManager.Save();
         }
 
         private void btaddserver_Click(object sender, RoutedEventArgs e)//Add server
