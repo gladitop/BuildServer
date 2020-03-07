@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\3\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\
+C:\BuildServer\GUI\BuildServer\obj\Debug\
 BuildServer
 none
 false
 DEBUG;TRACE
-C:\Users\3\Documents\GitHub\BuildServer\GUI\BuildServer\App.xaml
+C:\BuildServer\GUI\BuildServer\App.xaml
 6343601767
 
-15-1046385456
-1411750633511
+17-1258243338
+141-826906283
 AddServer.xaml;MainWindow.xaml;Other\Pages\FTP.xaml;Other\Start.xaml;SettingsForm.xaml;StartProgram.xaml;
 
 False

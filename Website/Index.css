@@ -1,5 +1,5 @@
 body {
-	background-color: #33FFD7;
+	background-color: #FFFBB3;
 }
 
 .linkes {
@@ -8,14 +8,14 @@ body {
 
 #titles {
 	font-size: 60px;
-	color: red;
-	background: green;
+	color: #FFFB75;
+	background: #D9A8FF;
 }
 
 .hottil {
-	opacity: 60%;
+	opacity: 90%;
 	font-size: 20px;
-	color: green;
+	color: #5A198C;
 }
 
 .button {
