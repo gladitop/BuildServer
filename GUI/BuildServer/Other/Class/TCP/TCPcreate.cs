@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace BuildServer.Other.Class.TCP
 {
-    class TCPcreate
+    static public class TCPcreate
     {
+        static public void Create()
+        {
+            
+        }
     }
 }

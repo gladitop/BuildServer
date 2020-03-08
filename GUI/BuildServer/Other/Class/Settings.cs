@@ -32,6 +32,8 @@ namespace BuildServer.Other.Class
             public string typeConnect;
             public string user;
             public string passworld;
+            public string pathCertificate;
+            public string passworldCertificate;
         }
     }
 
@@ -48,9 +50,6 @@ namespace BuildServer.Other.Class
                     settings.StartProgram = false;
                     settings.ListServer = new List<Settings.listServer>();
                 }
-                settings.ListServer.Add(new Settings.listServer() { descriptionServer="This test server",
-                nameServer="TestServer", passworld="123", pathServer= @"C:\BuildServer\GUI\BuildServer\bin\Debug",
-                typeConnect="tcp",user="Gladi",ver="1.0"});
 
                 File.WriteAllText("Settings.json", JsonConvert.SerializeObject(settings));
                 Data.Settings = settings;

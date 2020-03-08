@@ -1,1 +1,1 @@
-{"startProgram":true,"autoStart":false,"normalStart":true,"listServer":[{"nameServer":"TestServer","ver":"1.0","pathServer":"C:\\BuildServer\\GUI\\BuildServer\\bin\\Debug","descriptionServer":"This test server","typeConnect":"tcp","user":"Gladi","passworld":"123"}]}
+{"startProgram":true,"autoStart":false,"normalStart":true,"listServer":[{"nameServer":null,"ver":"1.0","pathServer":null,"descriptionServer":null,"typeConnect":"ftp","user":null,"passworld":null,"pathCertificate":null,"passworldCertificate":null}]}

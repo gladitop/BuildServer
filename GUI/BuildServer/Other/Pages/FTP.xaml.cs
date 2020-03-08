@@ -22,6 +22,8 @@ namespace BuildServer.Other.Pages
     public partial class FTP : Page
     {
         string _RootPlaceFolder = null;
+        string _pathCertificate = null;
+        string _passworldCertificate = null;
 
         public FTP()
         {
@@ -39,8 +41,7 @@ namespace BuildServer.Other.Pages
         {
             FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
 
-            if (folderBrowser.ShowDialog()
-                == System.Windows.Forms.DialogResult.OK)
+            if (folderBrowser.ShowDialog() == DialogResult.OK)
             {
                 _RootPlaceFolder = folderBrowser.SelectedPath;
                 tbrootfoldet.Text = _RootPlaceFolder;
@@ -80,6 +81,19 @@ namespace BuildServer.Other.Pages
                 tbport.Text = "";
                 System.Windows.MessageBox.Show("Error! You can only use numbers!",
                     Title, MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void btselectcertificate_Click(object sender, RoutedEventArgs e)
+        {
+            FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
+
+            if (folderBrowser.ShowDialog() == DialogResult.OK)
+            {
+                _pathCertificate = folderBrowser.SelectedPath;
+                tbpathcertificate.Text = _pathCertificate;
+                Class.Data.PathCertificate = _pathCertificate;
+                tbpassworldcertificate.IsEnabled = true;
             }
         }
     }

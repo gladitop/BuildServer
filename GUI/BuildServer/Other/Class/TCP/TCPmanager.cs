@@ -6,7 +6,26 @@ using System.Threading.Tasks;
 
 namespace BuildServer.Other.Class.TCP
 {
-    class TCPmanager
+    static public class TCPmanager
     {
+        static public void Start()
+        {
+            
+        }
+
+        static public void Stop()
+        {
+            
+        }
+
+        static public void Restart()
+        {
+            
+        }
+
+        static public void Delete()
+        {
+            
+        }
     }
 }
