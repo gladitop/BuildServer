@@ -1,4 +1,4 @@
-﻿<Page x:Class="BuildServer.Pages.Installing"
+﻿<Page x:Name="installingForm" x:Class="BuildServer.Pages.Installing"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,9 +6,11 @@
       xmlns:local="clr-namespace:BuildServer.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="425" d:DesignWidth="355"
-      Title="Installing">
+      Title="Installing" Loaded="installingForm_Loaded">
 
     <Grid>
-        
+        <Label Content="Downloads..." FontSize="40" HorizontalAlignment="Left" Margin="57,10,0,0" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="progress" HorizontalAlignment="Left" Height="50" Margin="10,322,0,0" VerticalAlignment="Top" Width="335"/>
+
     </Grid>
 </Page>

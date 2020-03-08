@@ -56,7 +56,7 @@ namespace BuildServer
 
         private void mainWindows_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            this.Close();
+            Environment.Exit(0);
         }
     }
 }
