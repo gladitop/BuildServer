@@ -52,8 +52,15 @@ namespace BuildServer
 
         private void tbaccept_Click(object sender, RoutedEventArgs e)//Done
         {
-            Data.Settings.StartProgram = true;
+            MessageBox.Show("7");
+            var settings = (Settings)Data.Settings;
+            MessageBox.Show("6");
+            settings.StartProgram = true;
+            MessageBox.Show("5");
+            Data.Settings = settings;
+            MessageBox.Show("4");
             SettingsManager.Save();
+            MessageBox.Show("3");
             MainWindow main = new MainWindow();
             main.Show();
             close = true;

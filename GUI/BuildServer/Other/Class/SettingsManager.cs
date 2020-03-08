@@ -14,29 +14,20 @@ namespace BuildServer.Other.Class
         {
             if (!File.Exists("Settings.json"))
             {
-                Settings settings = new Settings();
+                var settings = new Settings();
                 {
                     settings.AutoStart = false;
                     settings.NormalStart = true;
                     settings.StartProgram = false;
                     settings.ListServer = new List<Settings.listServer>();
                 }
-                settings.ListServer.Add(new Settings.listServer()
-                {
-                    descriptionServer = "des a server!",
-                    nameServer = "Test",
-                    pathServer = "Tester/user/lol",
-                    ver = "1.0"
-                });
-                settings.ListServer.Add(new Settings.listServer() { descriptionServer = "2 des", nameServer = "Test 2",
-                pathServer = "Tester2/lol", ver = "2.0"});
 
                 File.WriteAllText("Settings.json", JsonConvert.SerializeObject(settings));
                 Data.Settings = settings;
             }
             else
             {
-                var settings = Data.Settings;
+                var settings = (Settings)Data.Settings;
 
                 File.WriteAllText("Settings.json", JsonConvert.SerializeObject(settings));
 
@@ -52,7 +43,7 @@ namespace BuildServer.Other.Class
         {
             if (File.Exists("Settings.json"))
             {
-                var settings = JsonConvert.DeserializeObject<Settings>("Settings.json");
+                var settings = JsonConvert.DeserializeObject<Settings>(File.ReadAllText("Settings.json"));
                 Data.Settings = settings;
             }
             else

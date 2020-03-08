@@ -25,11 +25,15 @@ namespace BuildServer.Other
             InitializeComponent();
             //MessageBox.Show(Convert.ToString(Settings.Default.StartProgram));
             SettingsManager.Save();
+            MessageBox.Show("1");
             SettingsManager.Load();
+            MessageBox.Show("2");
             //Баг при загрузки json файла
-
-            if (Data.Settings.StartProgram == true)
+            var settings = (Settings)Data.Settings;
+            MessageBox.Show("8");
+            if (settings.StartProgram == true)
             {
+                MessageBox.Show("9");
                 MainWindow main = new MainWindow();
                 main.Show();
                 this.Hide();//!!!
