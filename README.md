@@ -63,6 +63,7 @@ It has a graphical shell.
 * .NET Core 3.0
 * C# 8.0
 * .Net Framework 4.7.2
+* WPF
 
 ## NuGet packages
 
@@ -85,6 +86,7 @@ It has a graphical shell.
 | `Android`      | Android version     |
 | `Update`       | To download updates |
 | `Website`       | This is a website the program |
+| `DesInstall`       | Deleting  the program |
 
 # Credits
 
