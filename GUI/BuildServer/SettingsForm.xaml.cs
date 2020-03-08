@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using BuildServer.Properties;
+using BuildServer.Other.Class;
 
 namespace BuildServer
 {
@@ -32,11 +32,12 @@ namespace BuildServer
         {
             //AutoStart
 
-            Settings.Default.AutoStart = checkautostart.IsChecked.Value;
+            var settings = (Settings)Data.Settings;
+            settings.AutoStart = checkautostart.IsChecked.Value;
 
             if (checkautostart.IsChecked == true)
             {
-                if (Settings.Default.NormalStart == true)
+                if (settings.NormalStart == true)
                 {
                     radiostart.IsChecked = true;
                     radioserver.IsChecked = false;
@@ -48,19 +49,21 @@ namespace BuildServer
                 }
             }
 
-            Settings.Default.Save();
+            SettingsManager.Save();
+            SettingsManager.Load();
         }
 
         void Set()//Вставка
         {
-            checkautostart.IsChecked = Settings.Default.AutoStart;
+            var settings = (Settings)Data.Settings;
+            checkautostart.IsChecked = settings.AutoStart;
 
             if (checkautostart.IsChecked == true)
             {
                 radioserver.IsEnabled = true;
                 radiostart.IsEnabled = true;
 
-                if (Settings.Default.NormalStart == true)
+                if (settings.NormalStart == true)
                 {
                     radiostart.IsChecked = true;
                     radioserver.IsChecked = false;

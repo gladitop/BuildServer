@@ -53,6 +53,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>BuildServer.App</StartupObject>
@@ -165,7 +167,6 @@
     <Compile Include="Other\Class\FTP\FTPCreate.cs" />
     <Compile Include="Other\Class\FTP\FTPServer.cs" />
     <Compile Include="Other\Class\Settings.cs" />
-    <Compile Include="Other\Class\SettingsManager.cs" />
     <Compile Include="Other\Class\TCP\TCPcreate.cs" />
     <Compile Include="Other\Class\TCP\TCPmanager.cs" />
     <Compile Include="Other\Pages\FTP.xaml.cs">

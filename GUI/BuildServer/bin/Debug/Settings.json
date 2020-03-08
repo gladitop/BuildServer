@@ -1,1 +1,1 @@
-null
+{"startProgram":true,"autoStart":false,"normalStart":true,"listServer":[{"nameServer":"TestServer","ver":"1.0","pathServer":"C:\\BuildServer\\GUI\\BuildServer\\bin\\Debug","descriptionServer":"This test server","typeConnect":"tcp","user":"Gladi","passworld":"123"}]}
