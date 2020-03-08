@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\BuildServer\GUI\BuildServer\App.xaml
-6343601767
+8-1924375590
 
-17-510268159
+19-440147147
 141-826906283
-AddServer.xaml;MainWindow.xaml;Other\Pages\FTP.xaml;Other\Start.xaml;SettingsForm.xaml;StartProgram.xaml;
+AddServer.xaml;MainWindow.xaml;Other\Pages\FTP.xaml;Other\Start.xaml;Other\Windows\AboutProgram.xaml;Other\Windows\SelecteDescriptionServer.xaml;SettingsForm.xaml;StartProgram.xaml;
 
-False
+True
 

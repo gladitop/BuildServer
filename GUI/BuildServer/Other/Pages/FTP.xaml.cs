@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BuildServer.Other.Class;
+using BuildServer.Other.Windows;
 
 namespace BuildServer.Other.Pages
 {
@@ -95,6 +97,18 @@ namespace BuildServer.Other.Pages
                 Class.Data.PathCertificate = _pathCertificate;
                 tbpassworldcertificate.IsEnabled = true;
             }
+        }
+
+        private void tbdescriptionserver_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            Data.DescriptionServer = tbdescriptionserver.Text;
+        }
+
+        private void btdescriptionserver_Click(object sender, RoutedEventArgs e)
+        {
+            SelecteDescriptionServer selecte = new SelecteDescriptionServer();
+            selecte.ShowDialog();
+            tbdescriptionserver.Text = Data.DescriptionServer;
         }
     }
 }

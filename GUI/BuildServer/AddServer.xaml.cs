@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.IO;
 using Microsoft.Win32;
 using System.Windows.Forms;
+using BuildServer.Other.Class;
 
 namespace BuildServer
 {
@@ -35,6 +36,18 @@ namespace BuildServer
         private void btselectfolder_Click(object sender, RoutedEventArgs e)// select folder
         {
 
+        }
+
+        private void btinfoserver_Click(object sender, RoutedEventArgs e)// info on server
+        {
+            System.Windows.MessageBox.Show($"Server name: {Data.RootNameFolder}\n" +
+                $"Path server: {Data.RootPlaceFolder}\n" +
+                $"Port server: {Data.Port}\n" +
+                $"Description the server: {Data.DescriptionServer}\n" +
+                $"Ver server: {Data.ver}\n" +
+                $"Path certificate: {Data.PathCertificate}\n" +
+                $"Passworld certificate: {Data.PathCertificate}",
+                Title, MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }

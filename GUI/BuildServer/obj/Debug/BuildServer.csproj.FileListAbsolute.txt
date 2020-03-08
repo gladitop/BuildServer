@@ -216,3 +216,7 @@ C:\BuildServer\GUI\BuildServer\obj\Debug\BuildServer.csproj.GenerateResource.cac
 C:\BuildServer\GUI\BuildServer\obj\Debug\BuildServer.csproj.CopyComplete
 C:\BuildServer\GUI\BuildServer\obj\Debug\BuildServer.exe
 C:\BuildServer\GUI\BuildServer\obj\Debug\BuildServer.pdb
+C:\BuildServer\GUI\BuildServer\obj\Debug\Other\Windows\SelecteDescriptionServer.g.cs
+C:\BuildServer\GUI\BuildServer\obj\Debug\Other\Windows\SelecteDescriptionServer.baml
+C:\BuildServer\GUI\BuildServer\obj\Debug\Other\Windows\AboutProgram.g.cs
+C:\BuildServer\GUI\BuildServer\obj\Debug\Other\Windows\AboutProgram.baml

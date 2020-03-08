@@ -25,7 +25,8 @@
             <TabItem Header="Build">
                 <Grid Background="#FFE5E5E5">
                     <Button Content="Build" FontSize="30" HorizontalAlignment="Left" Margin="304,291,0,0" VerticalAlignment="Top" Width="181" Height="46" Background="#FF9DFF3E"/>
-                    <Label Content="Info" FontSize="40" HorizontalAlignment="Left" Margin="355,10,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Done!" Foreground="Green" FontSize="40" HorizontalAlignment="Left" Margin="340,10,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btinfoserver" Content="info" FontSize="25" HorizontalAlignment="Left" Margin="685,348,0,0" VerticalAlignment="Top" Width="93" Height="37" Click="btinfoserver_Click"/>
 
                 </Grid>
             </TabItem>

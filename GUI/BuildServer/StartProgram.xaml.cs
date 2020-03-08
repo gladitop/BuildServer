@@ -66,8 +66,13 @@ namespace BuildServer
         {
             if (error == true)
             {
-                MessageBox.Show($"Error! {errorinfo}", Title, MessageBoxButton.OK, MessageBoxImage.Error);
-                Environment.Exit(0);
+                //Это потом сделать по английски!
+                MessageBoxResult lol = MessageBox.Show($"Error! {errorinfo}. Вы хотите продолжить?", Title, MessageBoxButton.YesNo, MessageBoxImage.Error);
+
+                if (lol == MessageBoxResult.Yes)
+                    tbaccept_Click(tbaccept, null);
+                else
+                    Environment.Exit(0);
             }
         }
     }
