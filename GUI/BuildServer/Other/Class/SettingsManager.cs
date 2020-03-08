@@ -36,13 +36,14 @@ namespace BuildServer.Other.Class
             }
             else
             {
-                Settings settings = Data.Settings;
+                var settings = Data.Settings;
 
                 File.WriteAllText("Settings.json", JsonConvert.SerializeObject(settings));
 
                 /*
                  * Короче тут баг
                  * после этого бреда пишится null в json
+                 * Исправлено!
                  */
             }
         }

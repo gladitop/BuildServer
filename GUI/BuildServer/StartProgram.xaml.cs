@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Net;
-using BuildServer.Properties;
+using BuildServer.Other.Class;
 
 namespace BuildServer
 {
@@ -52,8 +52,8 @@ namespace BuildServer
 
         private void tbaccept_Click(object sender, RoutedEventArgs e)//Done
         {
-            Settings.Default.StartProgram = true;
-            Settings.Default.Save();
+            Data.Settings.StartProgram = true;
+            SettingsManager.Save();
             MainWindow main = new MainWindow();
             main.Show();
             close = true;

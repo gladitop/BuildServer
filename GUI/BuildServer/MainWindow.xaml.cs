@@ -25,8 +25,9 @@ namespace BuildServer
         public MainWindow()
         {
             InitializeComponent();
-
-            SettingsManager.Save();
+           
+            //SettingsManager.Load();
+            //SettingsManager.Save();
 
             //Other.Class.SettingsManager.Load();
 

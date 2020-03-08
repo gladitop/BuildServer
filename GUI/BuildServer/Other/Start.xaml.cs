@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using BuildServer.Properties;
+using BuildServer.Other.Class;
 
 namespace BuildServer.Other
 {
@@ -24,7 +24,11 @@ namespace BuildServer.Other
         {
             InitializeComponent();
             //MessageBox.Show(Convert.ToString(Settings.Default.StartProgram));
-            if (Settings.Default.StartProgram == true)
+            SettingsManager.Save();
+            SettingsManager.Load();
+            //Баг при загрузки json файла
+
+            if (Data.Settings.StartProgram == true)
             {
                 MainWindow main = new MainWindow();
                 main.Show();
