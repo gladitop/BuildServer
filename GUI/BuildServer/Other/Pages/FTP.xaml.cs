@@ -110,5 +110,19 @@ namespace BuildServer.Other.Pages
             selecte.ShowDialog();
             tbdescriptionserver.Text = Data.DescriptionServer;
         }
+
+        private void checktls_Click(object sender, RoutedEventArgs e)
+        {
+            if (checktls.IsChecked == true)
+            {
+                btselectcertificate.IsEnabled = true;
+                tbpassworldcertificate.IsEnabled = true;
+            }
+            else
+            {
+                btselectcertificate.IsEnabled = false;
+                tbpassworldcertificate.IsEnabled = false;
+            }
+        }
     }
 }

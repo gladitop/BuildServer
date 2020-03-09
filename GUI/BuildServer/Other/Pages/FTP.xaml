@@ -17,7 +17,7 @@
         <Label Content="Name:" FontSize="25" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top"/>
         <Label Content="Port:" FontSize="25" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top"/>
         <TextBox IsEnabled="True" x:Name="tbport" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="97,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="148" SelectionChanged="tbport_SelectionChanged" TextChanged="tbport_TextChanged"/>
-        <CheckBox Content="Using TLS" FontSize="25" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checktls" Content="Using TLS" FontSize="25" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top" Click="checktls_Click"/>
         <TextBox IsEnabled="False" x:Name="tbpathcertificate" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="140,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="389" SelectionChanged="tbnameroot_SelectionChanged"/>
         <Label Content="Сertificate:" FontSize="25" HorizontalAlignment="Left" Margin="10,237,0,0" VerticalAlignment="Top"/>
         <Image ToolTip="Select folder" IsEnabled="False" Source="pack://application:,,,/Resources/Directory.png" HorizontalAlignment="Left" Height="39" Margin="552,237,0,0" VerticalAlignment="Top" Width="52"/>

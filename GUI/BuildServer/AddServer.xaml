@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuildServer"
         mc:Ignorable="d"
-        Title="BuildServer: Add server" ResizeMode="NoResize" Height="450" Width="800">
+        Title="BuildServer: Add server" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Height="450" Width="800">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0">
             <TabItem Header="Protocol">
