@@ -25,7 +25,6 @@ namespace BuildServer.Other.Pages
     {
         string _RootPlaceFolder = null;
         string _pathCertificate = null;
-        string _passworldCertificate = null;
 
         public FTP()
         {
@@ -88,11 +87,13 @@ namespace BuildServer.Other.Pages
 
         private void btselectcertificate_Click(object sender, RoutedEventArgs e)
         {
-            FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
+            OpenFileDialog folderBrowser = new OpenFileDialog();
 
             if (folderBrowser.ShowDialog() == DialogResult.OK)
             {
-                _pathCertificate = folderBrowser.SelectedPath;
+                folderBrowser.Title = "BuildServer: Selecte file";
+                folderBrowser.Filter = "(*.pfx)|pfx";
+                _pathCertificate = folderBrowser.FileName;
                 tbpathcertificate.Text = _pathCertificate;
                 Class.Data.PathCertificate = _pathCertificate;
                 tbpassworldcertificate.IsEnabled = true;
@@ -123,6 +124,11 @@ namespace BuildServer.Other.Pages
                 btselectcertificate.IsEnabled = false;
                 tbpassworldcertificate.IsEnabled = false;
             }
+        }
+
+        private void tbpassworldcertificate_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            Data.PassworldCertificate = tbpassworldcertificate.Password;
         }
     }
 }

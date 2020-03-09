@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace BuildServer.Other.Class.FTP
 {
-    class FTPServer
+    static public class FTPServer
     {
+        //переменные
+
+        static public List<string> ListServer = new List<string>();
+
+        static public void LoadServer()//Загрузка переменных из Config.ini
+        {
+
+        }
+
+        static public void Start(string path)//старт
+        {
+            
+        }
+
+        static public void Stop(string path)//стоп
+        {
+            
+        }
     }
 }

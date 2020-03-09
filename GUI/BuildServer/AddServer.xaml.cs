@@ -23,7 +23,6 @@ namespace BuildServer
     /// </summary>
     public partial class AddServer : Window
     {
-        string _RootPlaceFolder = null;
         object frame = null;
 
         public AddServer()
@@ -31,6 +30,7 @@ namespace BuildServer
             InitializeComponent();
             frame = new Other.Pages.FTP();
             framesettings.Navigate(frame);
+            DataManager.Reset();
         }
 
         private void btselectfolder_Click(object sender, RoutedEventArgs e)// select folder
@@ -46,8 +46,20 @@ namespace BuildServer
                 $"Description the server: {Data.DescriptionServer}\n" +
                 $"Ver server: {Data.ver}\n" +
                 $"Path certificate: {Data.PathCertificate}\n" +
-                $"Passworld certificate: {Data.PathCertificate}",
+                $"Passworld certificate: {Data.PassworldCertificate}",
                 Title, MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        //Прочее
+
+        public void CheckAddServer()//Проверка переменных для создания сервеар
+        {
+            //Тут надо дописать!
+        }
+
+        private void btbuildserver_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

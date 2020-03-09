@@ -25,4 +25,17 @@ namespace BuildServer.Other.Class
 
         static public object Settings { get; set; } = null;//Для Settings
     }
+
+    static public class DataManager//Тут разные методы для Data
+    {
+        static public void Reset()//Сброс данных
+        {
+            Data.RootPlaceFolder = "";
+            Data.RootNameFolder = "";
+            Data.Port = "";
+            Data.PathCertificate = "";
+            Data.PassworldCertificate = "";
+            Data.DescriptionServer = "";
+        }
+    }
 }

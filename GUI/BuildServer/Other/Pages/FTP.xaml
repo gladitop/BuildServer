@@ -23,7 +23,7 @@
         <Image ToolTip="Select folder" IsEnabled="False" Source="pack://application:,,,/Resources/Directory.png" HorizontalAlignment="Left" Height="39" Margin="552,237,0,0" VerticalAlignment="Top" Width="52"/>
         <Button IsEnabled="False" x:Name="btselectcertificate" Opacity="0" Content="Button" HorizontalAlignment="Left" Margin="552,233,0,0" VerticalAlignment="Top" Width="52" Height="43" Click="btselectcertificate_Click"/>
         <Label Content="Passworld: " FontSize="25" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top"/>
-        <PasswordBox IsEnabled="False" x:Name="tbpassworldcertificate" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="141,289,0,0" VerticalAlignment="Top" Width="389"/>
+        <PasswordBox IsEnabled="False" x:Name="tbpassworldcertificate" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="141,289,0,0" VerticalAlignment="Top" Width="389" PasswordChanged="tbpassworldcertificate_PasswordChanged"/>
         <Label Content="Description server: " FontSize="25" HorizontalAlignment="Left" Margin="10,348,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tbdescriptionserver" IsEnabled="True" HorizontalAlignment="Left" FontSize="25" Height="39" Margin="264,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="318" SelectionChanged="tbdescriptionserver_SelectionChanged"/>
         <Button x:Name="btdescriptionserver" Content="..." HorizontalAlignment="Left" Margin="604,348,0,0" VerticalAlignment="Top" Width="59" Height="40" Click="btdescriptionserver_Click"/>
