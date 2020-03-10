@@ -37,7 +37,7 @@ It has a graphical shell.
     * [Using](https://github.com/damiralmaev/BuildServer#using)
     * [NuGet packages](https://github.com/damiralmaev/BuildServer#nuget-packages)
     * [Folders](https://github.com/damiralmaev/BuildServer#folders)
-* [Credits](https://github.com/damiralmaev/BuildServer#credits)
+* [Creator](https://github.com/damiralmaev/BuildServer#creator)
 
 # Addictions
 
@@ -91,7 +91,7 @@ It has a graphical shell.
 | `Website`      | This is a website the program |
 | `DesInstall`   | Deleting  the program |
 
-# Credit
+# Creator
 
 ***Damir Maratovich Almaev*** a good programmer (13 old and From Russia)
 
