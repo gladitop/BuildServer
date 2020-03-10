@@ -127,5 +127,10 @@ namespace BuildServer
             MessageBox.Show(serverinfo.descriptionServer, Title,
                 MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+        private void btstartserver_Click(object sender, RoutedEventArgs e)// start/stop server
+        {
+
+        }
     }
 }

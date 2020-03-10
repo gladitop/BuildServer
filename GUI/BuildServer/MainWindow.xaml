@@ -22,16 +22,17 @@
             <Image IsEnabled="True" ToolTip="Start server" Source="Resources/StartBt.png" Height="51" Margin="0,-0.8,9.4,-0.6" VerticalAlignment="Top" HorizontalAlignment="Right" Width="51"/>
             <Image IsEnabled="True" ToolTip="Settings the server" Source="Resources/Settings.png" Height="51" Margin="0,-1,65,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="51"/>
             <Button x:Name="btssettings" Content="Button" Margin="0,0,65,0" VerticalAlignment="Top" Height="50" Click="btssettings_Click" HorizontalAlignment="Right" Width="51" Opacity="0"/>
+            <Button x:Name="btstartserver" Content="" Opacity="0" HorizontalAlignment="Right" Margin="0,0,9.4,0" VerticalAlignment="Top" Width="51" Height="51" Click="btstartserver_Click"/>
         </Grid>
         <TabControl Margin="155,51,9.6,10">
             <TabItem Header="Information">
                 <Grid Background="#FFE5E5E5">
                     <Label x:Name="lbnameserver" Content="Name:" FontSize="30" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="542"/>
                     <Label x:Name="lbtypeConnectserver" Content="Type connect:" FontSize="30" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="542"/>
-                    <Label x:Name="lbpathCertificateserver" Content="Path certificate:" FontSize="30" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="542"/>
-                    <Button x:Name="btlbpathCertificateserver" Content="..." HorizontalAlignment="Left" Margin="580,112,0,0" VerticalAlignment="Top" Width="31" Height="46" Click="btlbpathCertificateserver_Click"/>
-                    <Label x:Name="lbpathserver" Content="Path server:" FontSize="30" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="542"/>
-                    <Button x:Name="btlbpathserver" Content="..." HorizontalAlignment="Left" Margin="580,171,0,0" VerticalAlignment="Top" Width="31" Height="46" Click="btlbpathserver_Click"/>
+                    <Label x:Name="lbpathCertificateserver" Content="Path certificate:" FontSize="30" Margin="10,112,69,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btlbpathCertificateserver" Content="..." Margin="0,112,10,0" Click="btlbpathCertificateserver_Click" HorizontalAlignment="Right" Width="31" Height="46" VerticalAlignment="Top"/>
+                    <Label x:Name="lbpathserver" Content="Path server:" FontSize="30" Margin="10,163,69,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btlbpathserver" Content="..." Margin="0,171,10,0" VerticalAlignment="Top" Height="46" Click="btlbpathserver_Click" HorizontalAlignment="Right" Width="31"/>
                     <Label Content="Open description server:" FontSize="30" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" Width="343"/>
                     <Button x:Name="btopendescriptionserver" Content="..." HorizontalAlignment="Left" Margin="358,214,0,0" VerticalAlignment="Top" Width="31" Height="46" Click="btopendescriptionserver_Click"/>
                 </Grid>
