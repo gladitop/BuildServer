@@ -53,6 +53,9 @@ It has a graphical shell.
 
 * Access to the Internet
 * Open ports
+
+***Recommendations***
+
 * 64 bit
 
 # Prerequisites
@@ -85,11 +88,11 @@ It has a graphical shell.
 | `Other`        | This is Other       |
 | `Android`      | Android version     |
 | `Update`       | To download updates |
-| `Website`       | This is a website the program |
-| `DesInstall`       | Deleting  the program |
+| `Website`      | This is a website the program |
+| `DesInstall`   | Deleting  the program |
 
-# Credits
+# Credit
 
-***Damir Maratovich Almaev*** (13 old and From Russia)
+***Damir Maratovich Almaev*** a good programmer (13 old and From Russia)
 
 ![](https://i.ibb.co/MPNCfRY/Oz-Why-JWm-M8.jpgi)
