@@ -52,14 +52,33 @@ namespace BuildServer
 
         //Прочее
 
-        public void CheckAddServer()//Проверка переменных для создания сервеар
+        public bool CheckAddServer(string nameserver)//Проверка переменных для создания сервеар
         {
-            //Тут надо дописать!
+            var set = (Settings)Data.Settings;
+
+            foreach (var settings in set.ListServer)
+            {
+                if (settings.nameServer == nameserver)
+                    return false;
+            }
+
+            return true;
         }
 
         private void btbuildserver_Click(object sender, RoutedEventArgs e)
         {
+            bool yes = CheckAddServer(Data.RootNameFolder);
 
+            if (yes == true)
+            {
+                Other.Class.FTP.FTPCreate.Create();
+                this.Close();
+            }
+            else
+            {
+                System.Windows.MessageBox.Show("Такой сервер уже есть!", Title, 
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

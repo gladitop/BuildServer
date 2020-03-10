@@ -22,20 +22,33 @@ namespace BuildServer
     /// </summary>
     public partial class MainWindow : Window
     {
+        public object bufferserverinfo = null;
+
         public MainWindow()
         {
             InitializeComponent();
 
             //SettingsManager.Load();
             //SettingsManager.Save();
-
             //Other.Class.SettingsManager.Load();
-
             //var settings = new Settings();
             //settings.ListServer.Add(new Settings.listServer() { descriptionServer = "2 des", nameServer = "Test 2",
             //pathServer = "Tester2/lol", ver = "2.0"});
             ///Data.Settings = settings;
             //SettingsManager.Save();
+
+            LoadingListServer();
+        }
+
+        public void LoadingListServer()
+        {
+            var set = (Settings)Data.Settings;
+            listserver.Items.Clear();
+
+            foreach (var listservername in set.ListServer)
+            {
+                listserver.Items.Add(listservername.nameServer);
+            }
         }
 
         private void btaddserver_Click(object sender, RoutedEventArgs e)//Add server
@@ -58,6 +71,39 @@ namespace BuildServer
         {
             SettingsForm settings = new SettingsForm();
             settings.ShowDialog();
+        }
+
+        private void listserver_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (listserver.SelectedItem == null)
+                return;
+            var set = (Settings)Data.Settings;
+            object buffer = null;
+
+            lbnameserver.Content = "Name: " + listserver.SelectedItem.ToString();
+
+            foreach (object serverlistname in set.ListServer)
+            {
+                var lol = (Settings.listServer)serverlistname;
+
+                if (lol.nameServer == listserver.SelectedItem.ToString())
+                    buffer = serverlistname;
+            }
+
+            var serverinfo = (Settings.listServer)buffer;
+            lbtypeConnectserver.Content = $"Type connect: {serverinfo.typeConnect}";
+            lbpathCertificateserver.Content = $"Path certificate: {serverinfo.pathCertificate}";
+            bufferserverinfo = serverinfo;
+        }
+
+        private void btlbdescriptionserver_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var serverinfo = (Settings.listServer)bufferserverinfo;
+                MessageBox.Show($"Path certificate: {serverinfo.pathCertificate}");
+            }
+            catch { }
         }
     }
 }

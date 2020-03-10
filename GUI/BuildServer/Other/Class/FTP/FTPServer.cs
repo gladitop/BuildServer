@@ -14,6 +14,8 @@ namespace BuildServer.Other.Class.FTP
 
         static public void LoadServer()//Загрузка переменных из Config.ini
         {
+            DataManager.Reset();
+
 
         }
 

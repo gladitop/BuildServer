@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="BuildServer: Main menu" Height="450" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen" Width="800" Closing="Window_Closing">
     <Grid>
-        <ListBox HorizontalAlignment="Left" Width="155" Margin="0,0,0,63"/>
+        <ListBox SelectionMode="Single" x:Name="listserver" HorizontalAlignment="Left" Width="155" Margin="0,0,0,63" SelectionChanged="listserver_SelectionChanged"/>
         <Button x:Name="btaddserver" ToolTip="Add server" Margin="2,0,0,9" HorizontalAlignment="Left" Width="75" Height="49" VerticalAlignment="Bottom" Click="btaddserver_Click">
             <StackPanel Orientation=" Vertical">
                 <Image Source="Resources\AddServer.png" Height="36" Width="36" />
@@ -25,7 +25,12 @@
         </Grid>
         <TabControl Margin="155,51,9.6,10">
             <TabItem Header="Information">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="lbnameserver" Content="Name:" FontSize="30" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbtypeConnectserver" Content="Type connect:" FontSize="30" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbpathCertificateserver" Content="Path certificate:" FontSize="30" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="542"/>
+                    <Button x:Name="btlbdescriptionserver" Content="..." HorizontalAlignment="Left" Margin="580,112,0,0" VerticalAlignment="Top" Width="31" Height="46" Click="btlbdescriptionserver_Click"/>
+                </Grid>
             </TabItem>
             <TabItem Header="Settings">
                 <Grid Background="#FFE5E5E5"/>

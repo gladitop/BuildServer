@@ -22,7 +22,7 @@ namespace BuildServer.Other.Class.FTP
             Directory.CreateDirectory(Data.RootPlaceFolder);
             Directory.CreateDirectory($"{Data.RootPlaceFolder}/{Data.RootNameFolder}");
             Directory.CreateDirectory($"{Data.RootPlaceFolder}/{Data.RootNameFolder}/root");
-            File.Create($"{Data.RootPlaceFolder}/{Data.RootNameFolder}/Config.ini");
+            //File.Create($"{Data.RootPlaceFolder}/{Data.RootNameFolder}/Config.ini");
 
             using (StreamWriter sw = new StreamWriter($"{Data.RootPlaceFolder}/{Data.RootNameFolder}/Config.ini"))
             {
