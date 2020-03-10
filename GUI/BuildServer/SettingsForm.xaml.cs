@@ -23,12 +23,12 @@ namespace BuildServer
         public SettingsForm()
         {
             InitializeComponent();
-            Get();
+            Set();
         }
 
         /*---Это для настроик!---*/
 
-        void Get()//отдача
+        void Get()//вставка параметров
         {
             //AutoStart
 
@@ -53,7 +53,7 @@ namespace BuildServer
             SettingsManager.Load();
         }
 
-        void Set()//Вставка
+        void Set()//Отдача параметров
         {
             var settings = (Settings)Data.Settings;
             checkautostart.IsChecked = settings.AutoStart;
@@ -75,6 +75,7 @@ namespace BuildServer
                 }
             }
 
+            checkloggingserves.IsChecked = settings.IsLog;
         }
 
         /*---Это для настроик!---*/
@@ -106,7 +107,16 @@ namespace BuildServer
 
         private void btsave_Click(object sender, RoutedEventArgs e)//Save
         {
-            Set();
+            Get();
+        }
+
+        private void checkloggingserves_Click(object sender, RoutedEventArgs e)
+        {
+            var settings = (Settings)Data.Settings;
+
+            settings.IsLog = checkloggingserves.IsChecked.Value;
+
+            Data.Settings = settings;
         }
     }
 }

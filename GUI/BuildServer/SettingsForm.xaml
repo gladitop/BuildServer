@@ -13,6 +13,7 @@
         <Button x:Name="btradioserver" IsEnabled="False" Content="..." HorizontalAlignment="Left" Margin="185,90,0,0" VerticalAlignment="Top" Width="40"/>
         <Button x:Name="btsave" Content="Save" FontSize="30" HorizontalAlignment="Left" Margin="268,365,0,0" VerticalAlignment="Top" Width="109" Height="45" Click="btsave_Click"/>
         <Button Content="Default" FontSize="30" HorizontalAlignment="Left" Margin="136,365,0,0" VerticalAlignment="Top" Width="127" Height="45"/>
+        <CheckBox x:Name="checkloggingserves" Content="Logging the servers" FontSize="30" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Click="checkloggingserves_Click"/>
 
     </Grid>
 </Window>

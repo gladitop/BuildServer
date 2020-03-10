@@ -18,6 +18,8 @@ namespace BuildServer.Other.Class
         public bool AutoStart { get; set; }
         [JsonProperty("normalStart")]
         public bool NormalStart { get; set; }
+        [JsonProperty("isLog")]
+        public bool IsLog { get; set; }
         [JsonProperty("listServer")]
         public List<listServer> ListServer { get; set; } = new List<listServer>();
 
@@ -48,6 +50,7 @@ namespace BuildServer.Other.Class
                     settings.AutoStart = false;
                     settings.NormalStart = true;
                     settings.StartProgram = false;
+                    settings.IsLog = false;
                     settings.ListServer = new List<Settings.listServer>();
                 }
 
@@ -63,6 +66,7 @@ namespace BuildServer.Other.Class
                     settings.NormalStart = set.NormalStart;
                     settings.ListServer = set.ListServer;
                     settings.AutoStart = set.AutoStart;
+                    settings.IsLog = set.IsLog;
                 }
 
                 File.WriteAllText("Settings.json", JsonConvert.SerializeObject(settings));

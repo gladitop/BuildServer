@@ -166,6 +166,7 @@
     <Compile Include="Other\Class\Data.cs" />
     <Compile Include="Other\Class\FTP\FTPCreate.cs" />
     <Compile Include="Other\Class\FTP\FTPServer.cs" />
+    <Compile Include="Other\Class\LogManager.cs" />
     <Compile Include="Other\Class\Settings.cs" />
     <Compile Include="Other\Class\TCP\TCPcreate.cs" />
     <Compile Include="Other\Class\TCP\TCPmanager.cs" />
