@@ -22,7 +22,7 @@ namespace BuildServer
     /// </summary>
     public partial class MainWindow : Window
     {
-        public object bufferserverinfo = null;
+        public object bufferserverinfo;
 
         public MainWindow()
         {
@@ -93,17 +93,39 @@ namespace BuildServer
             var serverinfo = (Settings.listServer)buffer;
             lbtypeConnectserver.Content = $"Type connect: {serverinfo.typeConnect}";
             lbpathCertificateserver.Content = $"Path certificate: {serverinfo.pathCertificate}";
+            lbpathserver.Content = $"Path server: {serverinfo.pathServer}";
+
             bufferserverinfo = serverinfo;
         }
 
-        private void btlbdescriptionserver_Click(object sender, RoutedEventArgs e)
+        private void btlbpathCertificateserver_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                var serverinfo = (Settings.listServer)bufferserverinfo;
-                MessageBox.Show($"Path certificate: {serverinfo.pathCertificate}");
-            }
-            catch { }
+            if (bufferserverinfo == null)
+                return;
+
+            var serverinfo = (Settings.listServer)bufferserverinfo;
+            MessageBox.Show($"Path certificate: {serverinfo.pathCertificate}", Title, 
+                MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void btlbpathserver_Click(object sender, RoutedEventArgs e)
+        {
+            if (bufferserverinfo == null)
+                return;
+
+            var serverinfo = (Settings.listServer)bufferserverinfo;
+            MessageBox.Show($"Path server: {serverinfo.pathServer}", Title,
+                MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void btopendescriptionserver_Click(object sender, RoutedEventArgs e)
+        {
+            if (bufferserverinfo == null)
+                return;
+
+            var serverinfo = (Settings.listServer)bufferserverinfo;
+            MessageBox.Show(serverinfo.descriptionServer, Title,
+                MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }

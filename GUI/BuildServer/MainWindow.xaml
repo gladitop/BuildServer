@@ -26,10 +26,14 @@
         <TabControl Margin="155,51,9.6,10">
             <TabItem Header="Information">
                 <Grid Background="#FFE5E5E5">
-                    <Label x:Name="lbnameserver" Content="Name:" FontSize="30" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                    <Label x:Name="lbtypeConnectserver" Content="Type connect:" FontSize="30" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbnameserver" Content="Name:" FontSize="30" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="542"/>
+                    <Label x:Name="lbtypeConnectserver" Content="Type connect:" FontSize="30" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="542"/>
                     <Label x:Name="lbpathCertificateserver" Content="Path certificate:" FontSize="30" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="542"/>
-                    <Button x:Name="btlbdescriptionserver" Content="..." HorizontalAlignment="Left" Margin="580,112,0,0" VerticalAlignment="Top" Width="31" Height="46" Click="btlbdescriptionserver_Click"/>
+                    <Button x:Name="btlbpathCertificateserver" Content="..." HorizontalAlignment="Left" Margin="580,112,0,0" VerticalAlignment="Top" Width="31" Height="46" Click="btlbpathCertificateserver_Click"/>
+                    <Label x:Name="lbpathserver" Content="Path server:" FontSize="30" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="542"/>
+                    <Button x:Name="btlbpathserver" Content="..." HorizontalAlignment="Left" Margin="580,171,0,0" VerticalAlignment="Top" Width="31" Height="46" Click="btlbpathserver_Click"/>
+                    <Label Content="Open description server:" FontSize="30" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" Width="343"/>
+                    <Button x:Name="btopendescriptionserver" Content="..." HorizontalAlignment="Left" Margin="358,214,0,0" VerticalAlignment="Top" Width="31" Height="46" Click="btopendescriptionserver_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Settings">
