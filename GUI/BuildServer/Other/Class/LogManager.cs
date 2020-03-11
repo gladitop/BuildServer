@@ -9,27 +9,35 @@ namespace BuildServer.Other
 {
     public class LogManager
     {
-        public void LogCreate(string path)
+        public string path = null;
+        object streamWriter = null;
+
+        public void Create()
         {
-            void Create()
-            {
+            StreamWriter wr = new StreamWriter(path);
+            wr.AutoFlush = true;
+            streamWriter = wr;
+        }
 
-            }
+        public void WriteLine(string text)
+        {
+            StreamWriter wr = (StreamWriter)streamWriter;
 
-            void Delete()
-            {
+            wr.WriteLine(text);
+        }
 
-            }
+        public void Write(string text)
+        {
+            StreamWriter wr = (StreamWriter)streamWriter;
 
-            void WriteLine(string text)
-            {
+            wr.Write(text);
+        }
 
-            }
+        public void Close() 
+        {
+            StreamWriter wr = (StreamWriter)streamWriter;
 
-            void Reset()
-            {
-
-            }
+            wr.Close();
         }
     }
 }

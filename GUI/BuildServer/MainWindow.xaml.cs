@@ -55,6 +55,8 @@ namespace BuildServer
         {
             AddServer addServer = new AddServer();
             addServer.ShowDialog();
+
+            LoadingListServer();
         }
 
         private void btdeleteserver_Click(object sender, RoutedEventArgs e)//Delete server
