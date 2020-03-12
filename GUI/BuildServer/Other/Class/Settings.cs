@@ -31,13 +31,19 @@ namespace BuildServer.Other.Class
             public string ver;
             public string pathServer;
             public string descriptionServer;
-            public string typeConnect;
+            public TypeConnect typeConnect;//Тут надо везде в коде обозначить! (пока не сделано)
             public string user;
             public string passworld;
             public string pathCertificate;
             public string passworldCertificate;
             public int port;
             public int maxConnections;
+        }
+
+        public enum TypeConnect
+        {
+            FTP = 0,
+            TCP = 1
         }
     }
 

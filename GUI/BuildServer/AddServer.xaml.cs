@@ -46,7 +46,11 @@ namespace BuildServer
                 $"Description the server: {Data.DescriptionServer}\n" +
                 $"Ver server: {Data.ver}\n" +
                 $"Path certificate: {Data.PathCertificate}\n" +
-                $"Passworld certificate: {Data.PassworldCertificate}",
+                $"Passworld certificate: {Data.PassworldCertificate}\n" +
+                $"Max connectins: {Data.MaxConnections}\n" +
+                $"Type connect: {Data.TypeConnect}\n" +
+                $"User: {Data.User}\n" +
+                $"Passworld: {Data.Passworld}",
                 Title, MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
@@ -67,11 +71,10 @@ namespace BuildServer
 
         private void btbuildserver_Click(object sender, RoutedEventArgs e)
         {
-            bool yes = CheckAddServer(Data.RootNameFolder);
-
-            if (yes == true)
+            if (CheckAddServer(Data.RootNameFolder))
             {
                 Other.Class.FTP.FTPCreate.Create();
+                Other.Class.DataManager.Reset();
                 this.Close();
             }
             else

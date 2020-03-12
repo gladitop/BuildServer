@@ -35,6 +35,7 @@
                     <Button x:Name="btlbpathserver" Content="..." Margin="0,171,10,0" VerticalAlignment="Top" Height="46" Click="btlbpathserver_Click" HorizontalAlignment="Right" Width="31"/>
                     <Label Content="Open description server:" FontSize="30" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" Width="343"/>
                     <Button x:Name="btopendescriptionserver" Content="..." HorizontalAlignment="Left" Margin="358,214,0,0" VerticalAlignment="Top" Width="31" Height="46" Click="btopendescriptionserver_Click"/>
+                    <Button x:Name="btmoredelailsserver" FontSize="25" Content="More delails..." HorizontalAlignment="Left" Margin="10,281,0,0" VerticalAlignment="Top" Width="201" Height="46" Click="btmoredelailsserver_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Settings">

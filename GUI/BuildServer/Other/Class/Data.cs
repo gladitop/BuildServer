@@ -21,6 +21,9 @@ namespace BuildServer.Other.Class
         static public string PassworldCertificate { get; set; } = null;//пароль сертификата
         static public string DescriptionServer { get; set; } = null;//Описание сервера
         static public int MaxConnections { get; set; } = 0;//Максимально подключений
+        static public Settings.TypeConnect TypeConnect { get; set; } = 0;//Тип подключения
+        static public string User { get; set; } = null;//Это пользователь сервера
+        static public string Passworld { get; set; } = null;//Это пароль сервера
         static public bool ServerIsLive { get; set; } = false;//Сервер работает?
 
         //Прочее
@@ -40,6 +43,9 @@ namespace BuildServer.Other.Class
             Data.DescriptionServer = "";
             Data.MaxConnections = 0;
             Data.ServerIsLive = false;
+            Data.TypeConnect = Settings.TypeConnect.FTP;
+            Data.User = null;
+            Data.Passworld = null;
         }
     }
 }

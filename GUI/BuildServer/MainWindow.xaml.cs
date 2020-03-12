@@ -31,10 +31,11 @@ namespace BuildServer
             //SettingsManager.Load();
             //SettingsManager.Save();
             //Other.Class.SettingsManager.Load();
-            //var settings = new Settings();
+            //var settings = (Settings)Data.Settings;
             //settings.ListServer.Add(new Settings.listServer() { descriptionServer = "2 des", nameServer = "Test 2",
-            //pathServer = "Tester2/lol", ver = "2.0"});
-            ///Data.Settings = settings;
+            //pathServer = "Tester2/lol", ver = "2.0", user="Gladi", typeConnect=Settings.TypeConnect.FTP, maxConnections = 10,
+            //passworld = "123456789", passworldCertificate="547345", pathCertificate="Я не знаю", port = 987});
+            //Data.Settings = settings;
             //SettingsManager.Save();
 
             LoadingListServer();
@@ -66,6 +67,18 @@ namespace BuildServer
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)//Close
         {
+            if (Data.ServerIsLive)
+            {
+                MessageBoxResult i = MessageBox.Show("Сейчас работает сервер! Завершить работу?", Title, MessageBoxButton.YesNo,
+                    MessageBoxImage.Warning);
+
+                if (i == MessageBoxResult.No)
+                    e.Cancel = true;
+                else
+                {
+                    
+                }
+            }
             Environment.Exit(0);
         }
 
@@ -106,7 +119,7 @@ namespace BuildServer
                 return;
 
             var serverinfo = (Settings.listServer)bufferserverinfo;
-            MessageBox.Show($"Path certificate: {serverinfo.pathCertificate}", Title, 
+            MessageBox.Show($"Path certificate: {serverinfo.pathCertificate}", Title,
                 MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
@@ -142,6 +155,26 @@ namespace BuildServer
                 Data.ServerIsLive = false;
                 //И тут тоже
             }
+        }
+
+        private void btmoredelailsserver_Click(object sender, RoutedEventArgs e)//Больше инфы про сервер
+        {
+            if (bufferserverinfo == null)
+                return;
+            var serverinfo = (Settings.listServer)bufferserverinfo;
+
+            System.Windows.MessageBox.Show($"Server name: {serverinfo.nameServer}\n" +
+            $"Path server: {serverinfo.pathServer}\n" +
+            $"Port server: {serverinfo.port}\n" +
+            $"Description the server: {serverinfo.descriptionServer}\n" +
+            $"Ver server: {serverinfo.ver}\n" +
+            $"Path certificate: {serverinfo.pathCertificate}\n" +
+            $"Passworld certificate: {serverinfo.passworldCertificate}\n" +
+            $"Max connectins: {serverinfo.maxConnections}\n" +
+            $"Type connect: {serverinfo.typeConnect}\n" +
+            $"User: {serverinfo.user}\n" +
+            $"Passworld: {serverinfo.passworld}",
+            Title, MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
