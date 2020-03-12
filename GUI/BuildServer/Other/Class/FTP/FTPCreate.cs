@@ -14,10 +14,19 @@ namespace BuildServer.Other.Class.FTP
         {
             var settings = (Settings)Data.Settings;
 
-            settings.ListServer.Add(new Settings.listServer() { descriptionServer = Data.DescriptionServer,
-            nameServer = Data.RootNameFolder, pathServer = Data.RootPlaceFolder, passworld=null, ver=Data.ver,
-            pathCertificate = Data.PathCertificate, passworldCertificate = Data.PassworldCertificate, typeConnect="ftp",
-            user=null});
+            settings.ListServer.Add(new Settings.listServer()
+            {
+                descriptionServer = Data.DescriptionServer,
+                nameServer = Data.RootNameFolder,
+                pathServer = Data.RootPlaceFolder,
+                passworld = null,
+                ver = Data.ver,
+                pathCertificate = Data.PathCertificate,
+                passworldCertificate = Data.PassworldCertificate,
+                typeConnect = "ftp",
+                user = null,
+                maxConnections = Data.MaxConnections
+            });
 
             Directory.CreateDirectory(Data.RootPlaceFolder);
             Directory.CreateDirectory($"{Data.RootPlaceFolder}/{Data.RootNameFolder}");
@@ -37,6 +46,7 @@ namespace BuildServer.Other.Class.FTP
                 sw.WriteLine(Data.PassworldCertificate);
                 sw.WriteLine("ftp");
                 sw.WriteLine("");//user
+                sw.WriteLine(Data.MaxConnections);
 
                 sw.Close();
             }

@@ -12,7 +12,7 @@ namespace BuildServer.Other
         public string path = null;
         object streamWriter = null;
 
-        public void Create()
+        public void Create(string path)
         {
             StreamWriter wr = new StreamWriter(path);
             wr.AutoFlush = true;

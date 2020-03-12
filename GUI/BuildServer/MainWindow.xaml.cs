@@ -132,7 +132,16 @@ namespace BuildServer
 
         private void btstartserver_Click(object sender, RoutedEventArgs e)// start/stop server
         {
-
+            if (!Data.ServerIsLive)
+            {
+                Data.ServerIsLive = true;
+                //Там нужна смена картинки!
+            }
+            else
+            {
+                Data.ServerIsLive = false;
+                //И тут тоже
+            }
         }
     }
 }

@@ -36,6 +36,8 @@ namespace BuildServer.Other.Class
             public string passworld;
             public string pathCertificate;
             public string passworldCertificate;
+            public int port;
+            public int maxConnections;
         }
     }
 
@@ -70,7 +72,6 @@ namespace BuildServer.Other.Class
                 }
 
                 File.WriteAllText("Settings.json", JsonConvert.SerializeObject(settings));
-
                 /*
                  * Короче тут баг
                  * после этого бреда пишится null в json

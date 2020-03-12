@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\BuildServer\GUI\BuildServer\obj\Release\
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Release\
 BuildServer
 none
 false
 TRACE
-C:\BuildServer\GUI\BuildServer\App.xaml
-6343601767
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\App.xaml
+8-1924375590
 
-16-482537001
-141-826906283
-AddServer.xaml;MainWindow.xaml;Other\Pages\FTP.xaml;Other\Start.xaml;SettingsForm.xaml;StartProgram.xaml;
+192407950
+144-2052445662
+AddServer.xaml;MainWindow.xaml;Other\Pages\FTP.xaml;Other\Start.xaml;Other\Windows\AboutProgram.xaml;Other\Windows\SelecteDescriptionServer.xaml;SettingsForm.xaml;StartProgram.xaml;
 
 False
 

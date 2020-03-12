@@ -20,6 +20,8 @@ namespace BuildServer.Other.Class
         static public string PathCertificate { get; set; } = null;//путь сертификата tls
         static public string PassworldCertificate { get; set; } = null;//пароль сертификата
         static public string DescriptionServer { get; set; } = null;//Описание сервера
+        static public int MaxConnections { get; set; } = 0;//Максимально подключений
+        static public bool ServerIsLive { get; set; } = false;//Сервер работает?
 
         //Прочее
 
@@ -36,6 +38,7 @@ namespace BuildServer.Other.Class
             Data.PathCertificate = "";
             Data.PassworldCertificate = "";
             Data.DescriptionServer = "";
+            Data.MaxConnections = 0;
         }
     }
 }

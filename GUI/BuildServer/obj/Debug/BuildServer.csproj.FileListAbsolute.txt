@@ -227,3 +227,10 @@ C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\Other
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\Other\Windows\SelecteDescriptionServer.g.cs
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\Other\Windows\AboutProgram.baml
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\Other\Windows\SelecteDescriptionServer.baml
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\FubarDev.FtpServer.FileSystem.DotNet.dll
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\FubarDev.FtpServer.FileSystem.DotNet.pdb
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\FubarDev.FtpServer.FileSystem.DotNet.xml
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
