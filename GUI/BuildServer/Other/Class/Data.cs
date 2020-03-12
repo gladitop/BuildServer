@@ -39,6 +39,7 @@ namespace BuildServer.Other.Class
             Data.PassworldCertificate = "";
             Data.DescriptionServer = "";
             Data.MaxConnections = 0;
+            Data.ServerIsLive = false;
         }
     }
 }
