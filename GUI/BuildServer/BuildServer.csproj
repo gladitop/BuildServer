@@ -318,5 +318,8 @@
   <ItemGroup>
     <Resource Include="Resources\Directory.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BinEmptyIcon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

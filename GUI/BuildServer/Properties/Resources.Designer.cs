@@ -71,6 +71,16 @@ namespace BuildServer.Properties {
         }
         
         /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Icon, аналогичного (Значок).
+        /// </summary>
+        internal static System.Drawing.Icon BinEmptyIcon {
+            get {
+                object obj = ResourceManager.GetObject("BinEmptyIcon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap DeleteServer {
