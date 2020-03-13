@@ -80,7 +80,7 @@ namespace BuildServer
 
         static public void CreateServer()
         {
-            Settings settings = (Settings)Data.settigns;
+            var settings = (Settings)Data.Settigns;
 
             if (settings.Server == true)
             {

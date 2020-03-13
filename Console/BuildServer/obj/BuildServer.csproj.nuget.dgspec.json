@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {}
+    "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {}
   },
   "projects": {
-    "C:\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {
+    "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
+        "projectUniqueName": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
         "projectName": "BuildServer",
-        "projectPath": "C:\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
+        "projectPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\BuildServer.csproj",
         "packagesPath": "C:\\Users\\Дамир\\.nuget\\packages\\",
-        "outputPath": "C:\\BuildServer\\Console\\BuildServer\\obj\\",
+        "outputPath": "C:\\Users\\Дамир\\Documents\\GitHub\\BuildServer\\Console\\BuildServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Дамир\\AppData\\Roaming\\NuGet\\NuGet.Config",

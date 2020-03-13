@@ -1,5 +1,6 @@
 ﻿using System;
 using FubarDev.FtpServer;
+using BuildServer;
 
 namespace BuildServer
 {
@@ -14,9 +15,8 @@ namespace BuildServer
             Settings.Open();
             Commands.While();
             */
-            //SettingsMes.Save();
-            SettingsMes.Load();
-            Settings settings = (Settings)Data.settigns;
+            Settings.Load();
+            var settings = (BuildServer.Settings)Data.Settings;
             Console.WriteLine(settings.Server);
             Console.WriteLine(settings.ServerRootName);
         }
