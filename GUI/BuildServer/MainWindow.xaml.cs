@@ -165,15 +165,21 @@ namespace BuildServer
 
         private void btstartserver_Click(object sender, RoutedEventArgs e)// start/stop server
         {
+            if (bufferserverinfo == null)
+                return;
+
             if (!Data.ServerIsLive)
             {
                 Data.ServerIsLive = true;
-                //Там нужна смена картинки!
+                listserver.IsEnabled = false;
+                //Там нужна смена картинки! (готово)
+                imagesstartserver.Source = BitmapFrame.Create(new Uri("pack://application:,,,/Resources/StopBt.png"));
             }
             else
             {
                 Data.ServerIsLive = false;
-                //И тут тоже
+                listserver.IsEnabled = true;
+                imagesstartserver.Source = BitmapFrame.Create(new Uri("pack://application:,,,/Resources/StartBt.png"));
             }
         }
 

@@ -38,6 +38,7 @@ namespace BuildServer.Other.Class
             public string passworldCertificate;
             public int port;
             public int maxConnections;
+            public int lol;
         }
 
         public enum TypeConnect
@@ -64,6 +65,7 @@ namespace BuildServer.Other.Class
 
                 File.WriteAllText("Settings.json", JsonConvert.SerializeObject(settings));
                 Data.Settings = settings;
+                
             }
             else
             {

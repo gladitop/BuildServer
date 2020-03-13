@@ -19,7 +19,7 @@
             </StackPanel>
         </Button>
         <Grid Background="#FF41BFBD" Margin="155,0,-0.4,0" Height="51" VerticalAlignment="Top">
-            <Image IsEnabled="True" ToolTip="Start server" Source="Resources/StartBt.png" Height="51" Margin="0,-0.8,9.4,-0.6" VerticalAlignment="Top" HorizontalAlignment="Right" Width="51"/>
+            <Image x:Name="imagesstartserver" IsEnabled="True" ToolTip="Start server" Source="Resources/StartBt.png" Height="51" Margin="0,-0.8,9.4,-0.6" VerticalAlignment="Top" HorizontalAlignment="Right" Width="51"/>
             <Image IsEnabled="True" ToolTip="Settings the server" Source="Resources/Settings.png" Height="51" Margin="0,-1,65,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="51"/>
             <Button x:Name="btssettings" Content="Button" Margin="0,0,65,0" VerticalAlignment="Top" Height="50" Click="btssettings_Click" HorizontalAlignment="Right" Width="51" Opacity="0"/>
             <Button x:Name="btstartserver" Content="" Opacity="0" HorizontalAlignment="Right" Margin="0,0,9.4,0" VerticalAlignment="Top" Width="51" Height="51" Click="btstartserver_Click"/>
