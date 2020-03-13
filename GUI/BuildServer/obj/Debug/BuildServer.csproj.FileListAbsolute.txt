@@ -234,3 +234,5 @@ C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\Fubar
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\FubarDev.FtpServer.FileSystem.DotNet.xml
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\Other\Windows\DeleteServer.g.cs
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Debug\Other\Windows\DeleteServer.baml

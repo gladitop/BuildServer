@@ -12,7 +12,7 @@ namespace BuildServer.Other.Class
 
         static public string ver { get; set; } = "1.0";//Версия программы
 
-        //переменные
+        //переменные для сервера
 
         static public string RootPlaceFolder { get; set; } = null;//путь сервера
         static public string RootNameFolder { get; set; } = null;//имя сервера
@@ -29,6 +29,7 @@ namespace BuildServer.Other.Class
         //Прочее
 
         static public object Settings { get; set; } = null;//Для Settings
+        static public string PathServerDelete { get; set; } = null;//Путь сервера для удаления
     }
 
     static public class DataManager//Тут разные методы для Data

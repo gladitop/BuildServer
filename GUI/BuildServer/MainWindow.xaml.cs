@@ -62,7 +62,27 @@ namespace BuildServer
 
         private void btdeleteserver_Click(object sender, RoutedEventArgs e)//Delete server
         {
+            if (!Data.ServerIsLive)
+            {
+                if (bufferserverinfo == null)
+                    return;
 
+                var serverinfo = (Settings.listServer)bufferserverinfo;
+                MessageBoxResult i = MessageBox.Show("Вы точно хотите удалить этот сервер?", Title,
+                    MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (i == MessageBoxResult.Yes)
+                {
+                    Data.PathServerDelete = serverinfo.pathServer + "//" + serverinfo.nameServer;
+
+                    BuildServer.Other.Windows.DeleteServer deleteServer = new Other.Windows.DeleteServer();
+                    deleteServer.ShowDialog();
+
+                    LoadingListServer();
+                }
+            }
+            else
+                MessageBox.Show("Отключите сервер!", Title, MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)//Close
