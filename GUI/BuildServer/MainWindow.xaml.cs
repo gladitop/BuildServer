@@ -22,7 +22,8 @@ namespace BuildServer
     /// </summary>
     public partial class MainWindow : Window
     {
-        public object bufferserverinfo;
+        object bufferserverinfo;
+        object bufferserver;
 
         public MainWindow()
         {
@@ -172,14 +173,24 @@ namespace BuildServer
             {
                 Data.ServerIsLive = true;
                 listserver.IsEnabled = false;
+
                 //Там нужна смена картинки! (готово)
                 imagesstartserver.Source = BitmapFrame.Create(new Uri("pack://application:,,,/Resources/StopBt.png"));
+
+                BuildServer.Other.Class.FTP.FTPServer server = new Other.Class.FTP.FTPServer();
+                server.Load((Settings.listServer)bufferserverinfo);
+                server.Start();
+                bufferserver = server;
             }
             else
             {
                 Data.ServerIsLive = false;
                 listserver.IsEnabled = true;
+
                 imagesstartserver.Source = BitmapFrame.Create(new Uri("pack://application:,,,/Resources/StartBt.png"));
+
+                var server = (Other.Class.FTP.FTPServer)bufferserver;
+                server.Stop();
             }
         }
 

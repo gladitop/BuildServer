@@ -14,7 +14,7 @@
                     <Label Content="OR" FontSize="30" HorizontalAlignment="Left" Margin="364,118,0,0" VerticalAlignment="Top"/>
                     <Image Source="Resources/tcp.png" HorizontalAlignment="Left" Height="171" Margin="548,59,0,0" VerticalAlignment="Top" Width="171"/>
                     <RadioButton IsChecked="True" Content="FTP" FontSize="20" HorizontalAlignment="Left" Margin="120,268,0,0" VerticalAlignment="Top"/>
-                    <RadioButton Content="TCP" FontSize="20" HorizontalAlignment="Right" Margin="0,268,125,0" VerticalAlignment="Top"/>
+                    <RadioButton IsEnabled="False" Content="TCP" FontSize="20" HorizontalAlignment="Right" Margin="0,268,125,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Settings">

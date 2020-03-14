@@ -49,8 +49,7 @@ namespace BuildServer.Other.Class.FTP
             servis.Configure<DotNetFileSystemOptions>(opt => { opt.RootPath = serverinfo.pathServer
                 +"//"+serverinfo.nameServer; });
             servis.AddFtpServer(builder => { builder.UseDotNetFileSystem().EnableAnonymousAuthentication(); });
-            //servis.ConfigureAll<AnonymousMembershipProvider>(opt => { opt.ValidateUserAsync("123", "123"); });
-            servis.ConfigureAll<FtpServerOptions>(opt => { opt.Port = serverinfo.port;
+            servis.Configure<FtpServerOptions>(opt => { opt.Port = serverinfo.port;
                 opt.ConnectionInactivityCheckInterval = new TimeSpan(0, 0, 10); 
                 opt.MaxActiveConnections = serverinfo.maxConnections; });
 

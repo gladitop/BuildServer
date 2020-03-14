@@ -39,7 +39,9 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Settings">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Not work!" Foreground="Red" FontSize="50" HorizontalAlignment="Left" Margin="172,110,0,0" VerticalAlignment="Top"/>
+                </Grid>
             </TabItem>
         </TabControl>
 

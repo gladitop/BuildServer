@@ -149,3 +149,5 @@ C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Release\Bui
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Release\BuildServer.csproj.CopyComplete
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Release\BuildServer.exe
 C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Release\BuildServer.pdb
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Release\Other\Windows\DeleteServer.g.cs
+C:\Users\Дамир\Documents\GitHub\BuildServer\GUI\BuildServer\obj\Release\Other\Windows\DeleteServer.baml
