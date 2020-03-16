@@ -44,7 +44,7 @@ It has a graphical shell.
 
 **GUI**
 
-* `.Net` Framework 4.7.2 and higher
+* `.Net` Framework 4.8 and higher
 
 **Console**
 
@@ -77,7 +77,7 @@ patent rights.
 * Visual Studio 2019
 * .NET Core 3.0
 * C# 8.0
-* .Net Framework 4.7.2
+* .Net Framework 4.8
 * WPF
 
 ## NuGet packages
