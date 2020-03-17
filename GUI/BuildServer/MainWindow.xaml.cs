@@ -40,6 +40,16 @@ namespace BuildServer
             //SettingsManager.Save();
 
             LoadingListServer();
+
+            /*
+            Other.Class.FTP.ServerXmlFtp settings = 
+                new Other.Class.FTP.ServerXmlFtp( (Settings.listServer)bufferserverinfo );
+            Other.Class.FTP.SettingsXmlFtp xmlFtp = new Other.Class.FTP.SettingsXmlFtp();
+            xmlFtp.serverXmls.Add(settings);
+            Other.Class.FTP.FTPMoving ftpMoving = new Other.Class.FTP.FTPMoving("");
+
+            ftpMoving.Import(xmlFtp);
+            */
         }
 
         public void LoadingListServer()
@@ -132,6 +142,10 @@ namespace BuildServer
             lbpathserver.Content = $"Path server: {serverinfo.pathServer}";
 
             bufferserverinfo = serverinfo;
+
+            Other.Class.FTP.SettingsXmlFtp settings = new Other.Class.FTP.SettingsXmlFtp(serverinfo);
+            Other.Class.FTP.FTPMoving ftp = new Other.Class.FTP.FTPMoving("Settings.xml");
+            ftp.Import(settings);
         }
 
         private void btlbpathCertificateserver_Click(object sender, RoutedEventArgs e)

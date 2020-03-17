@@ -13,47 +13,41 @@ namespace BuildServer.Other.Class.FTP
     {
         string path = null;
 
-        public void Load(string Path) => path = Path;
+        public FTPMoving(string Path) => path = Path;
 
-        public SettingsXmlFtp Export(out SettingsXmlFtp xmlFtp)//Load
+        public SettingsXmlFtp Export()//Load
         {
-            new Thread(() =>
-            {
-                XmlSerializer xml = new XmlSerializer(typeof(SettingsXmlFtp));
+            SettingsXmlFtp set = new SettingsXmlFtp(new Settings.listServer());
+            XmlSerializer xml = new XmlSerializer(typeof(SettingsXmlFtp));
 
-                using (FileStream fs = new FileStream(path + "//Setting.xml", FileMode.OpenOrCreate))
-                {
-                    SettingsXmlFtp set = (SettingsXmlFtp)xml.Deserialize(fs);
-                    xmlFtp = set;
-                }
-            });
-            return new SettingsXmlFtp();
+            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+            {
+                set = (SettingsXmlFtp)xml.Deserialize(fs);
+            }
+
+            return set;// Лол! Я исправил баг!
         }
 
         public void Import(SettingsXmlFtp settings)//Save
         {
-            new Thread(() =>
-            {
-                XmlSerializer xml = new XmlSerializer(typeof(SettingsXmlFtp));
+            XmlSerializer xml = new XmlSerializer(typeof(SettingsXmlFtp));
 
-                using (FileStream fs = new FileStream(path + "//Setting.xml", FileMode.OpenOrCreate))
-                {
-                    xml.Serialize(fs, settings);
-                }
-            });
+            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
+            {
+                xml.Serialize(fs, settings); // тут баг!
+                //он не имеет беспараметрического конструктора
+            }
         }
     }
 
     [Serializable]
     public class SettingsXmlFtp
     {
-        public List<ServerXmlFtp> serverXmls = new List<ServerXmlFtp>();
-    }
-    [Serializable]
+        //[XmlArray("serverXmlsList")]
+        //public List<ServerXmlFtp> serverXmls = new List<ServerXmlFtp>();
+        //public int lol { get; set; } = 0;
 
-    public class ServerXmlFtp
-    {
-        public ServerXmlFtp(Settings.listServer listServer)
+        public SettingsXmlFtp(Settings.listServer listServer)
         {
             DescriptionServer = listServer.descriptionServer;
             RootNameFolder = listServer.nameServer;
@@ -63,25 +57,65 @@ namespace BuildServer.Other.Class.FTP
             PathCertificate = listServer.pathCertificate;
             PassworldCertificate = listServer.passworldCertificate;
 
-            //typeConnect = Settings.TypeConnect.FTP;// !!!
+            TypeConnect = Settings.TypeConnect.FTP;// !!!
 
             User = listServer.user;
             MaxConnections = listServer.maxConnections;
             Port = listServer.port;
         }
 
+        [XmlElement("descriptionServer")]
         public string DescriptionServer { get; set; } = null;
+
+        [XmlElement("rootNameFolder")]
         public string RootNameFolder { get; set; } = null;
+
+        [XmlElement("rootPlaceFolder")]
         public string RootPlaceFolder { get; set; } = null;
+
+        [XmlElement("passworld")]
         public string Passworld { get; set; } = null;
+
+        [XmlElement("ver")]
         public string Ver { get; set; } = null;
+
+        [XmlElement("pathCertificate")]
         public string PathCertificate { get; set; } = null;
+
+        [XmlElement("passworldCertificate")]
         public string PassworldCertificate { get; set; } = null;
 
+        [XmlElement("typeConnect")]
         public Settings.TypeConnect? TypeConnect { get; set; } = null; //Этот класс только для FTP (но без этого не куда!)
 
+        [XmlElement("user")]
         public string User { get; set; } = null;
+
+        [XmlElement("maxConnections")]
         public int MaxConnections { get; set; } = 0;
+
+        [XmlElement("port")]
         public int Port { get; set; } = 0;
+    }
+    [Serializable]
+
+    public class ServerXmlFtp
+    {
+        //public ServerXmlFtp(Settings.listServer listServer)
+        //{
+        //    DescriptionServer = listServer.descriptionServer;
+        //    RootNameFolder = listServer.nameServer;
+        //    RootPlaceFolder = listServer.pathServer;
+        //    Passworld = listServer.passworld;
+        //    Ver = listServer.ver;
+        //    PathCertificate = listServer.pathCertificate;
+        //    PassworldCertificate = listServer.passworldCertificate;
+
+        //    //typeConnect = Settings.TypeConnect.FTP;// !!!
+
+        //    User = listServer.user;
+        //    MaxConnections = listServer.maxConnections;
+        //    Port = listServer.port;
+        //}
     }
 }
