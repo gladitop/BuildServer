@@ -38,7 +38,6 @@ namespace BuildServer.Other.Class
             public string passworldCertificate;
             public int port;
             public int maxConnections;
-            public int lol;
         }
 
         public enum TypeConnect

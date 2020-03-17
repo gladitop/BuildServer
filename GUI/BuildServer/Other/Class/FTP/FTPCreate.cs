@@ -34,7 +34,7 @@ namespace BuildServer.Other.Class.FTP
             Directory.CreateDirectory($"{Data.RootPlaceFolder}/{Data.RootNameFolder}");
             Directory.CreateDirectory($"{Data.RootPlaceFolder}/{Data.RootNameFolder}/root");
             //File.Create($"{Data.RootPlaceFolder}/{Data.RootNameFolder}/Config.ini");
-
+            /*
             using (StreamWriter sw = new StreamWriter($"{Data.RootPlaceFolder}/{Data.RootNameFolder}/Config.ini"))
             {
                 sw.AutoFlush = true;
@@ -53,6 +53,7 @@ namespace BuildServer.Other.Class.FTP
 
                 sw.Close();
             }
+            */
 
             Data.Settings = settings;
             SettingsManager.Save();
