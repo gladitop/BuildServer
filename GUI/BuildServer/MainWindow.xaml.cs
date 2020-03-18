@@ -143,9 +143,15 @@ namespace BuildServer
 
             bufferserverinfo = serverinfo;
 
-            Other.Class.FTP.SettingsXmlFtp settings = new Other.Class.FTP.SettingsXmlFtp(serverinfo);
-            Other.Class.FTP.FTPMoving ftp = new Other.Class.FTP.FTPMoving("Settings.xml");
-            ftp.Import(settings);
+            /*
+            Other.Class.FTP.FTPMoving moving = new Other.Class.FTP.FTPMoving("Settings.xml");
+            Other.Class.FTP.ServerInfoFTP serverInfoFTP = new Other.Class.FTP.ServerInfoFTP();
+
+            serverInfoFTP = moving.Export();
+            serverInfoFTP.Lol++;
+            serverInfoFTP.LOlKek = "123";
+            moving.Import(serverInfoFTP);
+            */
         }
 
         private void btlbpathCertificateserver_Click(object sender, RoutedEventArgs e)
