@@ -22,6 +22,15 @@ It has a graphical shell.
 This type of program is suitable for running Windows, Linux, and Mac OC.
 It does not have a graphical shell.
 Because this is a console version of programs!
+
+```
+
+## Server
+```
+This type of program runs on Windows OS.
+Serves to start the server!
+Works using a config file.
+It does not have a graphical shell.
 ```
 
 ## Android
