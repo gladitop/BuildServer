@@ -36,7 +36,7 @@ namespace BuildServer
             //servis.AddLogging(lb => lb.AddSerilog();
             servis.Configure<DotNetFileSystemOptions>(opt => { opt.RootPath = "root"; });
             servis.AddFtpServer(builder => { builder.UseDotNetFileSystem().EnableAnonymousAuthentication(); });
-            //servis.ConfigureAll<AnonymousMembershipProvider>(opt => { opt.ValidateUserAsync("123", "123"); });
+            servis.ConfigureAll<AnonymousMembershipProvider>(opt => { opt.ValidateUserAsync("123", "123"); });
             servis.ConfigureAll<FtpServerOptions>(opt => { opt.Port = Convert.ToInt32(DATA.Port); 
                 opt.ConnectionInactivityCheckInterval = new TimeSpan(0, 0, 10); 
                 opt.MaxActiveConnections = Convert.ToInt32(DATA.MaxConnections); });
@@ -45,7 +45,7 @@ namespace BuildServer
 
             // Это нужно простестить! (готово)
 
-            if (DATA.Certificate == true)
+            if (DATA.Certificate)
             {
                 var cert = new X509Certificate2(DATA.PathCertificate, DATA.PassworldCertificate);
                 servis.Configure<AuthTlsOptions>(cfg =>
@@ -61,8 +61,6 @@ namespace BuildServer
                 var ftpserverHost = servisprod.GetRequiredService<IFtpServerHost>();
                 ftpserverHost.StartAsync(CancellationToken.None).Wait();
                 ftpServer = ftpserverHost;
-                Console.ReadLine();
-                Stop();
             }
         }
 

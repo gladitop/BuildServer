@@ -10,7 +10,7 @@ namespace BuildServer.Other.Class
     {
         //Информация
 
-        static public string ver { get; set; } = "1.0";//Версия программы
+        public const string ver = "1.0";//Версия программы
 
         //переменные для сервера
 

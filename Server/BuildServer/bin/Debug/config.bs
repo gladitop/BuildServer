@@ -1,0 +1,7 @@
+1.0
+typeConnect=ftp
+port=987
+maxConnections=10
+сertificate=True
+pathCertificate=tls.pfx
+passworldCertificate=9382034

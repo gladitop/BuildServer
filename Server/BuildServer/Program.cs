@@ -22,7 +22,11 @@ namespace BuildServer
             }
 
             Functions.WriteLine("Loading server...", ConsoleColor.Yellow);
+            FTPServer server = new FTPServer(data);
+            server.Start();
             Functions.WriteLine("Done!", ConsoleColor.Green);
+            Console.ReadLine();
+            server.Stop();
         }
     }
 }
