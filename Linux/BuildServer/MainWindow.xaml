@@ -1,0 +1,49 @@
+﻿<Window x:Class="BuildServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuildServer"
+        mc:Ignorable="d"
+        Title="BuildServer: Main menu" Height="450" MinHeight="450" MinWidth="800" WindowStartupLocation="CenterScreen" Width="800" Closing="Window_Closing">
+    <Grid>
+        <ListBox SelectionMode="Single" x:Name="listserver" HorizontalAlignment="Left" Width="155" Margin="0,0,0,63" SelectionChanged="listserver_SelectionChanged"/>
+        <Button x:Name="btaddserver" ToolTip="Add server" Margin="2,0,0,9" HorizontalAlignment="Left" Width="75" Height="49" VerticalAlignment="Bottom" Click="btaddserver_Click">
+            <StackPanel Orientation=" Vertical">
+                <Image Source="Resources\AddServer.png" Height="36" Width="36" />
+            </StackPanel>
+        </Button>
+        <Button x:Name="btdeleteserver" ToolTip="Delete server" HorizontalAlignment="Left" Margin="82,0,0,9" Width="75" Height="49" VerticalAlignment="Bottom" Click="btdeleteserver_Click">
+            <StackPanel Orientation=" Vertical">
+                <Image Source="Resources/DeleteServer.png" Height="36" Width="36" />
+            </StackPanel>
+        </Button>
+        <Grid Background="#FF41BFBD" Margin="155,0,-0.4,0" Height="51" VerticalAlignment="Top">
+            <Image x:Name="imagesstartserver" IsEnabled="True" ToolTip="Start server" Source="Resources/StartBt.png" Height="51" Margin="0,-0.8,9.4,-0.6" VerticalAlignment="Top" HorizontalAlignment="Right" Width="51"/>
+            <Image IsEnabled="True" ToolTip="Settings the server" Source="Resources/Settings.png" Height="51" Margin="0,-1,65,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="51"/>
+            <Button x:Name="btssettings" Content="Button" Margin="0,0,65,0" VerticalAlignment="Top" Height="50" Click="btssettings_Click" HorizontalAlignment="Right" Width="51" Opacity="0"/>
+            <Button x:Name="btstartserver" Content="" Opacity="0" HorizontalAlignment="Right" Margin="0,0,9.4,0" VerticalAlignment="Top" Width="51" Height="51" Click="btstartserver_Click"/>
+        </Grid>
+        <TabControl Margin="155,51,9.6,10">
+            <TabItem Header="Information">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="lbnameserver" Content="Name:" FontSize="30" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="542"/>
+                    <Label x:Name="lbtypeConnectserver" Content="Type connect:" FontSize="30" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="542"/>
+                    <Label x:Name="lbpathCertificateserver" Content="Path certificate:" FontSize="30" Margin="10,112,69,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btlbpathCertificateserver" Content="..." Margin="0,112,10,0" Click="btlbpathCertificateserver_Click" HorizontalAlignment="Right" Width="31" Height="46" VerticalAlignment="Top"/>
+                    <Label x:Name="lbpathserver" Content="Path server:" FontSize="30" Margin="10,163,69,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btlbpathserver" Content="..." Margin="0,171,10,0" VerticalAlignment="Top" Height="46" Click="btlbpathserver_Click" HorizontalAlignment="Right" Width="31"/>
+                    <Label Content="Open description server:" FontSize="30" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" Width="343"/>
+                    <Button x:Name="btopendescriptionserver" Content="..." HorizontalAlignment="Left" Margin="358,214,0,0" VerticalAlignment="Top" Width="31" Height="46" Click="btopendescriptionserver_Click"/>
+                    <Button x:Name="btmoredelailsserver" FontSize="25" Content="More delails..." HorizontalAlignment="Left" Margin="10,0,0,10" Width="201" Click="btmoredelailsserver_Click" Height="46" VerticalAlignment="Bottom"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Settings">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Not work!" Foreground="Red" FontSize="50" HorizontalAlignment="Left" Margin="172,110,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

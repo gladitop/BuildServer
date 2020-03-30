@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>BuildServer.App</StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\AddServer.png" />
+    <None Remove="Resources\BinEmptyIcon.ico" />
+    <None Remove="Resources\DeleteServer.png" />
+    <None Remove="Resources\Directory.png" />
+    <None Remove="Resources\ftp.png" />
+    <None Remove="Resources\question.ico" />
+    <None Remove="Resources\QuestionIcon.png" />
+    <None Remove="Resources\Settings.png" />
+    <None Remove="Resources\SettingsIcon.ico" />
+    <None Remove="Resources\StartBt.png" />
+    <None Remove="Resources\StopBt.png" />
+    <None Remove="Resources\tcp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FubarDev.FtpServer" Version="3.1.1" />
+    <PackageReference Include="FubarDev.FtpServer.FileSystem.DotNet" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\AddServer.png" />
+    <Resource Include="Resources\BinEmptyIcon.ico" />
+    <Resource Include="Resources\DeleteServer.png" />
+    <Resource Include="Resources\Directory.png" />
+    <Resource Include="Resources\ftp.png" />
+    <Resource Include="Resources\question.ico" />
+    <Resource Include="Resources\QuestionIcon.png" />
+    <Resource Include="Resources\Settings.png" />
+    <Resource Include="Resources\SettingsIcon.ico" />
+    <Resource Include="Resources\StartBt.png" />
+    <Resource Include="Resources\StopBt.png" />
+    <Resource Include="Resources\tcp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

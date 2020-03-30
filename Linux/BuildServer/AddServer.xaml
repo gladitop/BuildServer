@@ -1,0 +1,35 @@
+﻿<Window x:Class="BuildServer.AddServer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuildServer"
+        mc:Ignorable="d"
+        Title="BuildServer: Add server" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Height="450" Width="800">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="794" Margin="0,0,-0.4,0">
+            <TabItem Header="Protocol">
+                <Grid Background="#FFE5E5E5">
+                    <Image Source="Resources/ftp.png" HorizontalAlignment="Left" Height="171" Margin="67,59,0,0" VerticalAlignment="Top" Width="171"/>
+                    <Label Content="OR" FontSize="30" HorizontalAlignment="Left" Margin="364,118,0,0" VerticalAlignment="Top"/>
+                    <Image Source="Resources/tcp.png" HorizontalAlignment="Left" Height="171" Margin="548,59,0,0" VerticalAlignment="Top" Width="171"/>
+                    <RadioButton IsChecked="True" Content="FTP" FontSize="20" HorizontalAlignment="Left" Margin="120,268,0,0" VerticalAlignment="Top"/>
+                    <RadioButton IsEnabled="False" Content="TCP" FontSize="20" HorizontalAlignment="Right" Margin="0,268,125,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Settings">
+                <Grid Background="#FFE5E5E5">
+                    <Frame x:Name="framesettings" Content="" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" Height="392" VerticalAlignment="Top" Width="788"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Build">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="btbuildserver" Content="Build" FontSize="30" HorizontalAlignment="Left" Margin="304,291,0,0" VerticalAlignment="Top" Width="181" Height="46" Background="#FF9DFF3E" Click="btbuildserver_Click"/>
+                    <Label Content="Done!" Foreground="Green" FontSize="40" HorizontalAlignment="Left" Margin="340,10,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btinfoserver" Content="info" FontSize="25" HorizontalAlignment="Left" Margin="685,348,0,0" VerticalAlignment="Top" Width="93" Height="37" Click="btinfoserver_Click"/>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
